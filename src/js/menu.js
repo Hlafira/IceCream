@@ -1,1 +1,1 @@
-alert('hello');
+let some;
