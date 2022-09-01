@@ -1,2 +1,12 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+body {
+  margin: 0;
+
+  background-color: var(--section-color);
+  color: var(--primary-text-color);
+
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
