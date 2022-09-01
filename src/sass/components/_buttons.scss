@@ -1,1 +1,57 @@
+// основные стили кнопки
+.button {
+  display: flex;
+  align-items: center;
+  padding: 12px 35px;
 
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: var(--primary-title-color);
+
+  border-radius: 10px;
+
+  border: none;
+  cursor: pointer;
+
+  &_svg {
+    width: 7px;
+    height: 11px;
+    fill: none;
+    stroke: currentColor;
+    margin-left: 16px;
+  }
+}
+
+// сплошная кнопка
+.button_fill {
+  background-color: var(--primary-btn-color);
+  &:hover {
+    background-color: var(--secondary-btn-color);
+  }
+}
+
+// прозрачная кнопка
+.button_transparent {
+  padding: 10px 33px;
+  border: 2px solid var(--primary-btn-color);
+  background-color: transparent;
+
+  &:hover {
+    border-color: var(--secondary-btn-color);
+  }
+}
+
+// кнопка с белым текстом
+.button_color-light {
+  color: var(--primary-text-color);
+}
+
+@media screen and (max-width: 1999px) {
+  .button_small {
+    font-size: 8px;
+    line-height: 9px;
+    padding: 6px 13px;
+    border-radius: 8px;
+  }
+}
