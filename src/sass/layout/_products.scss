@@ -1,12 +1,12 @@
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 767px) {
     .products {
     
-            background-image: url(../images/desktop/desktop-bg.jpg);
+            background-image: url(../images/mobile/mobile-bg.jpg);
     
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-size: cover;
             background-position: center;
-            height: 1925px;
+            height: 2925px;
         }
     
         .products-list__card-ice {
@@ -15,10 +15,11 @@
             padding-bottom: 60px;
             padding-left: 61px;
             padding-right: 61px;
-            width: 368px;
-            height: 535px;
+            width: 280px;
+            height: 528px;
             border-radius: 24px;
             background-color: var(--card-green-color);
+                margin-bottom: 164px;
     
             &::before {
                 content: "";
@@ -42,10 +43,11 @@
             padding-bottom: 60px;
             padding-left: 61px;
             padding-right: 61px;
-            width: 368px;
-            height: 535px;
+        width: 280px;
+            height: 528px;
             border-radius: 24px;
             background-color: var(--card-yellow-color);
+            margin-bottom: 164px;
     
             &::before {
                 content: "";
@@ -69,8 +71,8 @@
             padding-bottom: 60px;
             padding-left: 61px;
             padding-right: 61px;
-            width: 368px;
-            height: 535px;
+        width: 280px;
+            height: 528px;
             border-radius: 24px;
             background-color: var(--card-brown-color);
     
