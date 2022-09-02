@@ -1,11 +1,37 @@
 <header class="header">
-  <div class="container">
+  <div class="container modile-container mobile-box">
     <nav class="header-nav">
       <a class="header-nav__logo" href="./index.html">
-        <svg class="header-nav__logo-png" aria-label="Company's logo">
-          <use href="./images/logo.png"></use>
-        </svg>
+        <picture>
+          <source
+            srcset="
+              ./images/desktop/header/logo-60.png    1x,
+              ./images/desktop/header/logo-60@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/tablet/header/logo-48.png    1x,
+              ./images/tablet/header/logo-48@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/mobile/header/logo-40.png    1x,
+              ./images/mobile/header/logo-40@2x.png 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            class="header-nav__logo-img"
+            src="./images/desktop/header/logo-60.png"
+            alt="Company's logo"
+          />
+        </picture>
       </a>
+
       <ul class="header-nav__list">
         <li class="header-nav__item">
           <a class="header-nav__link" href="#hero">Home</a>
@@ -25,43 +51,71 @@
       </ul>
     </nav>
 
-    <div class="header__btn">
-      <button class="btn" type="button">Buy now</button>
-      <svg class="header__btn-arrow" aria-label="Company's logo">
-        <use href="./images/logo.png"></use>
-      </svg>
-    </div>
+    <div class="header__tablet-btn-box">
+      <button class="button button_fill" type="button">
+        Buy now
+        <svg class="button__svg mobile-menu__svg">
+          <use href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
 
-    <button class="mobile-menu__open-btn" type="button" data-menu-open>
-      <svg
-        class="mobile-menu__open-icon"
-        width="40"
-        height="40"
-        aria-label="Mobile menu switch"
-      >
-        <use href="./images/logo.png"></use>
-      </svg>
-    </button>
+      <button class="mobile-menu__open-btn" type="button" data-menu-open>
+        <svg
+          class="mobile-menu__open-icon"
+          width="20"
+          height="20"
+          aria-label="Mobile menu switch"
+        >
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 
   <!-- Mobile menu -->
 
   <div class="mobile-menu" data-menu>
-    <div class="container">
-      <div class="mobile-menu__box">
+    <div class="modile-container">
+      <div class="mobile-box">
         <a class="header-nav__logo" href="./index.html">
-          <svg class="header-nav__logo-png" aria-label="Company's logo">
-            <use href="./images/logo.png"></use>
-          </svg>
+          <picture>
+            <source
+              srcset="
+                ./images/desktop/header/logo-60.png    1x,
+                ./images/desktop/header/logo-60@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/tablet/header/logo-48.png    1x,
+                ./images/tablet/header/logo-48@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/mobile/header/logo-40.png    1x,
+                ./images/mobile/header/logo-40@2x.png 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="header-nav__logo-img"
+              src="./images/desktop/header/logo-60.png"
+              alt="Company's logo"
+            />
+          </picture>
         </a>
+
         <button class="mobile-menu__close-btn" type="button" data-menu-close>
           <svg
             class="mobile-menu__close-icon"
-            width="40"
-            height="40"
+            width="20"
+            height="20"
             aria-label="Mobile menu switch"
           >
-            <use href="./images/logo.png"></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
       </div>
@@ -84,11 +138,13 @@
         </li>
       </ul>
 
-      <div class="header__btn">
-        <button class="btn" type="button">Buy now</button>
-        <svg class="header__btn-arrow" aria-label="Company's logo">
-          <use href="./images/logo.png"></use>
-        </svg>
+      <div class="mobile-menu__btn">
+        <button class="button button_fill mobile-menu__btn" type="button">
+          Buy now
+          <svg class="button__svg mobile-menu__svg">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
