@@ -1,35 +1,49 @@
-.advantages_list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 28px;
-}
-
 .advantages {
+  text-align: center;
+  font-weight: 700;
+  color: #fcfcfc;
+  margin-left: auto;
+  margin-right: auto;
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 28px;
+  }
   & .title {
-    text-align: center;
-    &.cow::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-top: 16px;
-      background-image: url('../images/cow.png');
-    }
-    &.weight::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-top: 16px;
-      background-image: url('../images/weight.png');
-    }
-    &.ice::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-top: 16px;
-      background-image: url('../images/ice.png');
-    }
+    font-size: 36px;
+    line-height: 1.17;
+    text-transform: uppercase;
+  }
+  & .text,
+  &_item {
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  .cow::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 16px;
+    background-image: url('../images/cow.png');
+  }
+  .weight::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 16px;
+    background-image: url('../images/weight.png');
+  }
+  .ice::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 16px;
+    background-image: url('../images/ice.png');
   }
 }
