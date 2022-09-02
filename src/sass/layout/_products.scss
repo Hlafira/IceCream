@@ -1,65 +1,189 @@
-  .products {
-   
-      background-image: url(../images/desktop/desktop-bg.jpg);
+  @media screen and (max-width: 450px) {
+    .products {
     
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-position: center;
-      height: 1049px;
-  }
- 
-.products-list__card-ice {
-    position: relative;
-    padding-top: 166px;
-    padding-bottom: 60px;
-    padding-left: 61px;
-        padding-right: 61px;
-width: 368px;
-    height: 535px;
-    border-radius: 24px;
-    background-color: var(--card-green-color);
-    &::before {
-            content: "";
-            position: absolute;
-            top: -3%;
+            background-image: url(../images/desktop/desktop-bg.jpg);
+    
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 1925px;
+        }
+    
+        .products-list__card-ice {
+            position: relative;
+            padding-top: 166px;
+            padding-bottom: 60px;
+            padding-left: 61px;
+            padding-right: 61px;
+            width: 368px;
+            height: 535px;
+            border-radius: 24px;
+            background-color: var(--card-green-color);
+    
+            &::before {
+                content: "";
+                position: absolute;
+                top: -3%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-            display: block;
-            min-width: 300px;
-            height: 300px;
-            border-radius: 50%;
-           
-            background-color: var(--card-green-color);
-            box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+                display: block;
+                min-width: 300px;
+                height: 300px;
+                border-radius: 50%;
+    
+                background-color: var(--card-green-color);
+                box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+            }
         }
-}
-.products-list__card-coffee {
-    position: relative;
-    padding-top: 166px;
-        padding-bottom: 60px;
-        padding-left: 61px;
-        padding-right: 61px;
-        width: 368px;
-        height: 535px;
-        border-radius: 24px;
-    background-color: var(--card-yellow-color);
-    &::before {
-            content: "";
+    
+        .products-list__card-coffee {
+            position: relative;
+            padding-top: 166px;
+            padding-bottom: 60px;
+            padding-left: 61px;
+            padding-right: 61px;
+            width: 368px;
+            height: 535px;
+            border-radius: 24px;
+            background-color: var(--card-yellow-color);
+    
+            &::before {
+                content: "";
+                position: absolute;
+                top: -3%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+                min-width: 300px;
+                height: 300px;
+                border-radius: 50%;
+    
+                background-color: var(--card-yellow-color);
+                box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+            }
+        }
+    
+        .products-list__card-milkshakes {
+            position: relative;
+            padding-top: 166px;
+            padding-bottom: 60px;
+            padding-left: 61px;
+            padding-right: 61px;
+            width: 368px;
+            height: 535px;
+            border-radius: 24px;
+            background-color: var(--card-brown-color);
+    
+            &::before {
+                content: "";
+                position: absolute;
+                top: -3%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: block;
+                min-width: 300px;
+                height: 300px;
+                border-radius: 50%;
+    
+                background-color: var(--card-brown-color);
+                box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+            }
+        }
+    
+        .products-list {
+            justify-content: center;
+            gap: 32px;
+    
+            .products-list__card-tittle {
+                font-size: 30px;
+                line-height: 37px;
+                text-align: center;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+    
+                color: #131313;
+                padding-bottom: 65px;
+            }
+    
+            .products-list__card-info {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 176%;
+                /* or 28px */
+    
+                text-align: center;
+                letter-spacing: 0.04em;
+    
+                color: #131313;
+                padding-bottom: 60px;
+            }
+        }
+    
+        .products-tittles {
+    
+            padding-bottom: 303px;
+        }
+    
+        .products-tittle {
+            text-align: center;
+    
+            font-weight: 800;
+            font-size: 30px;
+            line-height: 37px;
+    
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+    
+            color: #000000;
+            margin-bottom: 12px;
+        }
+    
+        .products-subtittle {
+            text-align: center;
+            font-family: 'Seymour One';
+    
+            font-size: 36px;
+            line-height: 45px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+    
+            color: #000000;
+        }
+    
+        .svg-use {
             position: absolute;
-            top: -3%;
+            top: 90%;
             left: 50%;
             transform: translate(-50%, -50%);
-            display: block;
-            min-width: 300px;
-            height: 300px;
-            border-radius: 50%;
-    
-            background-color: var(--card-yellow-color);
-            box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
         }
-}
-.products-list__card-milkshakes {
-    position: relative;
+    
+        .products-list__item {
+            position: relative;
+        }
+    
+        .products-img {
+            position: absolute;
+            top: -6%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+        }
+  }
+  
+  
+  @media screen and (min-width: 1200px) {
+.products {
+
+        background-image: url(../images/desktop/desktop-bg.jpg);
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 1049px;
+    }
+
+    .products-list__card-ice {
+        position: relative;
         padding-top: 166px;
         padding-bottom: 60px;
         padding-left: 61px;
@@ -67,8 +191,9 @@ width: 368px;
         width: 368px;
         height: 535px;
         border-radius: 24px;
-    background-color: var(--card-brown-color);
-    &::before {
+        background-color: var(--card-green-color);
+
+        &::before {
             content: "";
             position: absolute;
             top: -3%;
@@ -78,80 +203,144 @@ width: 368px;
             min-width: 300px;
             height: 300px;
             border-radius: 50%;
-    
+
+            background-color: var(--card-green-color);
+            box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+        }
+    }
+
+    .products-list__card-coffee {
+        position: relative;
+        padding-top: 166px;
+        padding-bottom: 60px;
+        padding-left: 61px;
+        padding-right: 61px;
+        width: 368px;
+        height: 535px;
+        border-radius: 24px;
+        background-color: var(--card-yellow-color);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -3%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            min-width: 300px;
+            height: 300px;
+            border-radius: 50%;
+
+            background-color: var(--card-yellow-color);
+            box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+        }
+    }
+
+    .products-list__card-milkshakes {
+        position: relative;
+        padding-top: 166px;
+        padding-bottom: 60px;
+        padding-left: 61px;
+        padding-right: 61px;
+        width: 368px;
+        height: 535px;
+        border-radius: 24px;
+        background-color: var(--card-brown-color);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -3%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            min-width: 300px;
+            height: 300px;
+            border-radius: 50%;
+
             background-color: var(--card-brown-color);
             box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
         }
-}
-.products-list {
-    display: flex;
-    justify-content: center;
-    gap: 32px
-    ;
-.products-list__card-tittle{
-        font-size: 30px;
-        line-height: 37px;
-             text-align: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    
-        color: #131313;
-        padding-bottom: 65px;
-}
-.products-list__card-info{
-    font-weight: 400;
-        font-size: 16px;
-        line-height: 176%;
-        /* or 28px */
-    
+    }
+
+    .products-list {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+
+        .products-list__card-tittle {
+            font-size: 30px;
+            line-height: 37px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+
+            color: #131313;
+            padding-bottom: 65px;
+        }
+
+        .products-list__card-info {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 176%;
+            /* or 28px */
+
+            text-align: center;
+            letter-spacing: 0.04em;
+
+            color: #131313;
+            padding-bottom: 60px;
+        }
+    }
+
+    .products-tittles {
+
+        padding-bottom: 303px;
+    }
+
+    .products-tittle {
         text-align: center;
-        letter-spacing: 0.04em;
-    
-        color: #131313;
-        padding-bottom: 60px;
-}
-}
-.products-tittles{
-  
-    padding-bottom: 303px;
-}
-.products-tittle{
-    text-align: center;
-    
+
         font-weight: 800;
         font-size: 30px;
         line-height: 37px;
-       
+
         letter-spacing: 0.04em;
         text-transform: uppercase;
-    
+
         color: #000000;
         margin-bottom: 12px;
-}
-.products-subtittle {
-    text-align: center;
-    font-family: 'Seymour One';
-       
+    }
+
+    .products-subtittle {
+        text-align: center;
+        font-family: 'Seymour One';
+
         font-size: 36px;
         line-height: 45px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-    
+
         color: #000000;
-}
-.svg-use {
-position: absolute;
-top: 90%;
-left: 50%;
-    transform: translate(-50%, -50%);
-}
-.products-list__item{
-    position: relative;
-}
-.products-img {
-    position: absolute;
-    top: -6%;
-left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
+    }
+
+    .svg-use {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .products-list__item {
+        position: relative;
+    }
+
+    .products-img {
+        position: absolute;
+        top: -6%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+  }
+  
