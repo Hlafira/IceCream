@@ -1,1 +1,41 @@
-<h2>About</h2>
+<section class="section about">
+  <div class="container">
+    <p class="title title_lable">Tradition and love</p>
+    <h2 class="title title_header">How it’s made?</h2>
+    <picture class="about_picture">
+      <source
+        srcset="./images/desktop/about/cow-490.png 1х, ./images/desktop/about/cow-490@2x.png 2x"
+        media="(min-width: $desktop)"
+      />
+      <source
+        srcset="
+          ./images/tablet/about/cow-330.png    1x,
+          ./images/tablet/about/cow-330@2x.png 2x
+        "
+        media="(min-width: $tablet"
+      />
+      <source
+        srcset="
+          ./images/mobile/about/cow-278.png    1x,
+          ./images/mobile/about/cow-278@2x.png 2x
+        "
+        media="(max-width: 767px"
+      />
+      <img src="./images/desktop/about/cow-490.png" alt="Корова" width="100%" />
+    </picture>
+
+    <p class="about_text">
+      Ice is a place where you will become not only a little happier, but also
+      healthier. Health is the main value for us, and we follow it when creating
+      our handmade desserts.
+    </p>
+    <p class="about_text">
+      We use traditional recipes and 100% natural ingredients. Our products are
+      so natural that they can be given to children from the age of three years.
+      Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
+      milkshakes.
+    </p>
+
+    <button class="button about" type="button">Read more</button>
+  </div>
+</section>

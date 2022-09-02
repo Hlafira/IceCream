@@ -1,0 +1,46 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+
+  &_light {
+    color: #fcfcfc;
+  }
+
+  &_dark {
+    color: #000000;
+  }
+
+  &_header {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+    margin-bottom: 32px;
+  }
+
+  &_label {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 12px;
+    margin-top: 62px;
+  }
+}
+
+// .title_label {
+//   margin-bottom: 12px;
+// }
+// .title_header {
+//   margin-bottom: 32px;
+// }
+.about_text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+.button.about {
+  background-color: #f8d24e;
+  align-items: center;
+}
