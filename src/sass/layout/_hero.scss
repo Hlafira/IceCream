@@ -1,0 +1,55 @@
+// mobile
+.hero {
+  position: relative;
+  padding-top: 60px;
+
+  &__title {
+    margin-bottom: 32px;
+
+    @include font(26px, 33px);
+    font-family: 'Seymour One';
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+  }
+
+  &__important {
+    font-size: 34px;
+  }
+
+  &__links {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+    text-decoration: underline;
+    color: var(--primary-btn-color);
+
+    &:hover,
+    &:focus {
+      color: var(--secondary-btn-color);
+    }
+  }
+
+  &__button {
+    margin-right: 16px;
+  }
+
+  &__cards,
+  &__description {
+    display: none;
+  }
+
+  &__main-picture {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    object-fit: cover;
+    width: 160px;
+    border-radius: 50%;
+  }
+}

@@ -1,10 +1,10 @@
-@mixin font($fs, $fw: 400, $lh) {
-    font-size: $fs;
-    font-weight: $fw;
-    $line-height: calc($lh / $fs);
+@mixin font($fs, $lh, $fw: 400) {
+  font-size: $fs;
+  font-weight: $fw;
+  $line-height: calc($lh / $fs);
 }
 @mixin flex-center() {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

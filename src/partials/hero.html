@@ -1,1 +1,78 @@
-<h1>Hero</h1>
+<section class="section hero">
+  <div class="container">
+    <!-- title -->
+    <h1 class="hero__title">
+      ice cream made with <span class="hero__important">passion</span>
+    </h1>
+    <!-- links -->
+    <div class="hero__links">
+      <a
+        href="#products"
+        class="button button_transparent button_small hero__button"
+        >Products</a
+      >
+      <a href="" class="hero__link">How it's made?</a>
+    </div>
+
+    <!-- cards -->
+    <ul class="hero__cards">
+      <li class="hero__card">
+        <div class="hero__number">16</div>
+        <div class="hero__object">cafes</div>
+      </li>
+
+      <li class="hero__card">
+        <div class="hero__number">16</div>
+        <div class="hero__object">cafes</div>
+      </li>
+    </ul>
+
+    <!-- description -->
+    <div class="hero__description">
+      <picture>
+        <source
+          srcset="
+            ./images/tablet/hero/ice-cream-plate-152.png    1x,
+            ./images/tablet/hero/ice-cream-plate-152@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/desktop/hero/ice-cream-plate-225.png    1x,
+            ./images/desktop/hero/ice-cream-plate-225@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <img
+          src="./images/desktop/hero/ice-cream-plate-225.png"
+          alt="Plate with ice-cream"
+        />
+      </picture>
+      <div class="hero__text">
+        <div class="hero__paragrap">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </div>
+        <a href="" class="hero__arrow">
+          <svg><use href="./images/icons.svg#icon-long-arrow"></use></svg>
+        </a>
+      </div>
+    </div>
+    <!-- pictures -->
+    <!-- Что бы сделать анимацию нуден элемент в разметке  -->
+    <picture class="hero__main-picture">
+      <!-- ./images/mobile/hero/hero-ice-cream-170@2x.png 2x -->
+      <source
+        srcset="
+          ./images/mobile/hero/hero-ice-cream-170.png    1x,
+          ./images/mobile/hero/hero-ice-cream-170@2x.png 2x
+        "
+        media="(max-width:481px)"
+      />
+      <img src="./images/mobile/hero/hero-ice-cream-170.png" alt="ice-cream" />
+    </picture>
+  </div>
+</section>
