@@ -1,6 +1,6 @@
-.container {
-  background-color: var(--section-color);
-}
+// .container {
+//   background-color: var(--section-color);
+// }
 
 @media screen and (max-width: 1199px) {
   .header-nav__list {
@@ -188,7 +188,6 @@
   .header-nav__list {
     @include flex-center();
     margin-left: 241px;
-    margin-right: 145px;
     gap: 27px;
     @include font($fs: 16px, $fw: 700, $lh: 20px);
   }
