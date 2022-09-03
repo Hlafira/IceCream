@@ -1,0 +1,234 @@
+// mobile
+.container {
+  background: transparent;
+}
+.hero {
+  padding-top: 60px;
+
+  background-image: url('../images/mobile/hero/hero-bg-329.png');
+  background-repeat: repeat-x;
+  background-position: bottom;
+
+  // title
+  &__title {
+    width: 250px;
+    margin-bottom: 32px;
+
+    @include font($fs: 26px, $fw: 400, $lh: 33px);
+    font-family: 'Seymour One';
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+  }
+
+  &__important {
+    font-size: 34px;
+  }
+
+  // links
+  &__links {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    @include font($fs: 8px, $fw: 600, $lh: 10px);
+    text-decoration: underline;
+    color: var(--primary-btn-color);
+    transition: color 250ms var(--time-function);
+
+    &:hover,
+    &:focus {
+      color: var(--secondary-btn-color);
+    }
+  }
+
+  &__button {
+    margin-right: 16px;
+  }
+
+  // cards
+  &__cards,
+  &__description {
+    display: none;
+  }
+
+  // main picture ice-cream
+  &__main-picture {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    object-fit: cover;
+    width: 160px;
+  }
+
+  &__main-img {
+    filter: drop-shadow(0 0 10px rgba(252, 252, 252, 0.44));
+    -webkit-filter: drop-shadow(0 0 10px rgba(252, 252, 252, 0.44));
+  }
+}
+
+// tablet
+@media screen and (min-width: $tablet) {
+  .hero {
+    padding-top: 40px;
+    background-image: url('../images/tablet/hero/hero-bg-767.png');
+
+    &__container {
+      position: relative;
+      padding-bottom: 6px;
+    }
+
+    // title
+    &__title {
+      width: 180px;
+      @include font($fs: 18px, $fw: 400, $lh: 32px);
+    }
+
+    &__important {
+      @include font($fs: 24px, $fw: 400, $lh: 13px);
+    }
+
+    // links
+    &__links {
+      margin-bottom: 28px;
+    }
+
+    // description
+    &__description {
+      display: flex;
+      gap: 33px;
+      align-items: center;
+    }
+
+    &__paragraph {
+      @include font($fs: 12px, $fw: 400, $lh: 16px);
+      letter-spacing: 0;
+      width: 150px;
+      margin-bottom: 25px;
+      // line-height: 1.7;
+    }
+
+    &__arrow {
+      color: var(--primary-text-color);
+      display: inline-block;
+      transition: color 250ms var(--time-function);
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--secondary-btn-color);
+      }
+    }
+
+    &__svg {
+      fill: currentColor;
+    }
+
+    // cards
+    &__cards {
+      display: block;
+      position: absolute;
+      top: -8px;
+      right: 32px;
+      text-align: right;
+      letter-spacing: 0;
+    }
+
+    &__card:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__number {
+      margin-bottom: 4px;
+      @include font($fs: 28px, $fw: 400, $lh: 34px);
+      font-weight: 900;
+
+      text-transform: uppercase;
+      color: var(--secondary-black-text-color);
+    }
+
+    &__object {
+      @include font($fs: 8px, $fw: 400, $lh: 10px);
+    }
+
+    // main picture ice-cream
+    &__main-picture {
+      position: absolute;
+      right: 80px;
+      bottom: 0;
+      width: 253;
+    }
+
+    &__main-img {
+      filter: drop-shadow(0 0 20px rgba(252, 252, 252, 0.44));
+      -webkit-filter: drop-shadow(0 0 20px rgba(252, 252, 252, 0.44));
+    }
+  }
+}
+
+// desktop
+@media screen and (min-width: $desktop) {
+  .hero {
+    background-image: url('../images/desktop/hero/hero-bg-1200.png');
+    &__container {
+      padding-bottom: 60px;
+    }
+    &__title {
+      width: 380px;
+      margin-bottom: 28px;
+      @include font($fs: 38px, $fw: 400, $lh: 48px);
+    }
+
+    &__important {
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    &__button {
+      margin-right: 32px;
+    }
+
+    &__link {
+      @include font($fs: 14px, $fw: 400, $lh: 17px);
+    }
+
+    &__links {
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      gap: 22px;
+    }
+
+    &__paragraph {
+      width: 200px;
+      margin-top: 15px;
+      @include font($fs: 14px, $fw: 400, $lh: 17px);
+    }
+
+    // cards
+    &__cards {
+      top: 8px;
+    }
+
+    &__number {
+      @include font($fs: 46px, $fw: 900, $lh: 56px);
+    }
+
+    &__object {
+      @include font($fs: 14px, $fw: 400, $lh: 17px);
+    }
+
+    // main picture
+    &__main-picture {
+      right: 100px;
+      width: 455px;
+      bottom: 0;
+    }
+
+    &__main-img {
+      filter: drop-shadow(0 0 30px rgba(252, 252, 252, 0.44));
+      -webkit-filter: drop-shadow(0 0 30px rgba(252, 252, 252, 0.44));
+    }
+  }
+}
