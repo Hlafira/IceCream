@@ -51,8 +51,8 @@
       display: none;
     }
     &_picture {
-      //   width: 279px;
-      //   height: 279px;
+      // width: 448px;
+      // height: 448px;
       border-radius: 50%;
       background-color: yellow;
       margin-left: auto;
@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .title_header {
     margin-bottom: 40px;
   }
@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .title_header {
     margin-bottom: 82px;
   }

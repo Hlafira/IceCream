@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
   .section.advantages {
-    padding-bottom: 58px;
+    padding-bottom: 36px;
   }
   .advantages {
     text-align: center;
@@ -61,9 +61,9 @@
     }
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .section.advantages {
-    padding-bottom: 204px;
+    padding-bottom: 40px;
   }
   .advantages {
     text-align: center;
@@ -124,9 +124,9 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .section.advantages {
-    padding-bottom: 180px;
+    padding-bottom: 86px;
   }
   .advantages {
     text-align: center;
