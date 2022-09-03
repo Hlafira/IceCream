@@ -42,20 +42,14 @@
         display: inline-block;
         width: 36px;
         height: 36px;
+      }
+      &.cow::before {
         background-image: url('../images/advantages/cow.png');
       }
       &.weight::before {
-        content: '';
-        display: inline-block;
-        width: 36px;
-        height: 36px;
         background-image: url('../images/advantages/weight.png');
       }
       &.ice::before {
-        content: '';
-        display: inline-block;
-        width: 36px;
-        height: 36px;
         background-image: url('../images/advantages/ice-cream.png');
       }
     }
@@ -85,8 +79,8 @@
       text-transform: uppercase;
       margin-bottom: 16px;
     }
-    & .text,
-    &_item {
+    & .text {
+      font-weight: 400;
       font-size: 14px;
       line-height: 1.74;
     }
@@ -108,16 +102,10 @@
       }
       &.weight::before {
         content: '';
-        display: inline-block;
-        width: 36px;
-        height: 36px;
         background-image: url('../images/advantages/weight.png');
       }
       &.ice::before {
         content: '';
-        display: inline-block;
-        width: 36px;
-        height: 36px;
         background-image: url('../images/advantages/ice-cream.png');
       }
     }
@@ -148,8 +136,7 @@
       text-transform: uppercase;
       margin-bottom: 16px;
     }
-    & .text,
-    &_item {
+    & .text {
       font-size: 16px;
       line-height: 1.76;
     }
