@@ -1,4 +1,6 @@
-  @media screen and (max-width: 767px) {
+ 
+//  ---------------MOBILE----------------------
+ @media screen and (max-width: 767px) {
     .products {
     
             background-image: url(../images/mobile/mobile-bg.jpg);
@@ -28,8 +30,8 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 display: block;
-                min-width: 300px;
-                height: 300px;
+                width: 200px;
+                    height: 200px;
                 border-radius: 50%;
     
                 background-color: var(--card-green-color);
@@ -56,8 +58,8 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 display: block;
-                min-width: 300px;
-                height: 300px;
+                width: 200px;
+                height: 200px;
                 border-radius: 50%;
     
                 background-color: var(--card-yellow-color);
@@ -83,8 +85,8 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 display: block;
-                min-width: 300px;
-                height: 300px;
+                width: 200px;
+                    height: 200px;
                 border-radius: 50%;
     
                 background-color: var(--card-brown-color);
@@ -122,8 +124,7 @@
         }
     
         .products-tittles {
-    
-            padding-bottom: 303px;
+                padding-bottom: 148px;
         }
     
         .products-tittle {
@@ -166,13 +167,15 @@
         .products-img {
             position: absolute;
             top: -6%;
-            left: 50%;
+            left: 32%;
             transform: translate(-50%, -50%);
     
         }
+     
   }
-  
-  
+    //  ---------------/MOBILE----------------------
+
+
   @media screen and (min-width: 1200px) {
 .products {
 
