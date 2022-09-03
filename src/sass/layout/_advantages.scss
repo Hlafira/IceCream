@@ -20,40 +20,47 @@
       text-transform: uppercase;
       margin-bottom: 18px;
     }
-    & .text,
-    &_item {
+    & .text {
       margin-left: 45px;
       margin-right: 45px;
       font-size: 12px;
       line-height: 1.7;
+      letter-spacing: 0;
     }
-    .cow::before {
-      content: '';
-      display: inline-block;
+
+    &_png {
+      margin-inline: auto;
+      padding: 7px;
       width: 50px;
       height: 50px;
+      border-radius: 50%;
+      background-color: var(--primary-btn-color);
       margin-bottom: 16px;
-      background-image: url('../images/cow.png');
-    }
-    .weight::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-bottom: 16px;
-      background-image: url('../images/weight.png');
-    }
-    .ice::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-bottom: 16px;
-      background-image: url('../images/ice.png');
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-image: url('../images/advantages/cow.png');
+      }
+      &.weight::before {
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-image: url('../images/advantages/weight.png');
+      }
+      &.ice::before {
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-image: url('../images/advantages/ice-cream.png');
+      }
     }
   }
 }
-
 @media screen and (min-width: 768px) {
   .section.advantages {
     padding-bottom: 204px;
@@ -83,29 +90,36 @@
       font-size: 14px;
       line-height: 1.74;
     }
-    .cow::before {
-      content: '';
-      display: inline-block;
+    &_png {
+      margin-inline: auto;
+      padding: 7px;
       width: 50px;
       height: 50px;
-      margin-bottom: 32px;
-      background-image: url('../images/cow.png');
-    }
-    .weight::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-bottom: 32px;
-      background-image: url('../images/weight.png');
-    }
-    .ice::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-bottom: 32px;
-      background-image: url('../images/ice.png');
+      border-radius: 50%;
+      background-color: var(--primary-btn-color);
+      margin-bottom: 16px;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-image: url('../images/advantages/cow.png');
+      }
+      &.weight::before {
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-image: url('../images/advantages/weight.png');
+      }
+      &.ice::before {
+        content: '';
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-image: url('../images/advantages/ice-cream.png');
+      }
     }
   }
 }
@@ -138,30 +152,6 @@
     &_item {
       font-size: 16px;
       line-height: 1.76;
-    }
-    .cow::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-bottom: 40px;
-      background-image: url('../images/cow.png');
-    }
-    .weight::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-bottom: 40px;
-      background-image: url('../images/weight.png');
-    }
-    .ice::before {
-      content: '';
-      display: inline-block;
-      width: 50px;
-      height: 50px;
-      margin-bottom: 40px;
-      background-image: url('../images/ice.png');
     }
   }
 }
