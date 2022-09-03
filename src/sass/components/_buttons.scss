@@ -1,6 +1,6 @@
 // основные стили кнопки
 .button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: 12px 35px;
 
@@ -14,7 +14,7 @@
   border: none;
   cursor: pointer;
 
-  &_svg {
+  &__svg {
     width: 7px;
     height: 11px;
     fill: none;
