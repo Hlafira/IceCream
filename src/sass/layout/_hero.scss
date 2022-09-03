@@ -113,17 +113,16 @@
 
     &__arrow {
       color: var(--primary-text-color);
-      display: block;
+      display: inline-block;
       transition: color 250ms var(--time-function);
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         color: var(--secondary-btn-color);
       }
     }
 
     &__svg {
-      width: 40px;
-      height: 14px;
       fill: currentColor;
     }
 
@@ -157,7 +156,7 @@
     &__main-picture {
       position: absolute;
       right: 80px;
-      bottom: -4px;
+      bottom: 0;
       width: 253;
     }
 
@@ -177,7 +176,7 @@
     }
     &__title {
       width: 380px;
-      padding-bottom: 28px;
+      margin-bottom: 28px;
       @include font(38px, 48px);
     }
 
@@ -204,7 +203,7 @@
 
     &__paragraph {
       width: 200px;
-      padding-top: 15px;
+      margin-top: 15px;
       @include font(14px, 20px);
     }
 

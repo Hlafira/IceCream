@@ -4,8 +4,7 @@
   align-items: center;
   padding: 12px 35px;
 
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 18px);
   font-weight: 600;
   color: var(--primary-title-color);
 
@@ -28,7 +27,9 @@
   background-color: var(--primary-btn-color);
   transition: background-color 250ms var(--time-function);
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     background-color: var(--secondary-btn-color);
   }
 }
@@ -40,7 +41,9 @@
   background-color: transparent;
   transition: border-color 250ms var(--time-function);
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border-color: var(--secondary-btn-color);
   }
 }
@@ -52,8 +55,7 @@
 
 @media screen and (max-width: 1199px) {
   .button_small {
-    font-size: 8px;
-    line-height: 9px;
+    @include font(8px, 9px);
     padding: 6px 13px;
     border-radius: 8px;
   }
