@@ -17,38 +17,6 @@
   left: 50%;
   transform: translateX(-50%);
   border-radius: 7.40681px;
-  transition: opacity 1s ease-in-out;
-}
-
-@keyframes changePhotoGallery {
-  0% {
-    opacity: 1;
-  }
-  45% {
-    opacity: 0;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.first-gallery-photo {
-  animation-name: changePhotoGallery;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-direction: alternate;
-}
-
-.second-gallery-photo {
-  animation-name: changePhotoGallery;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-direction: alternate;
 }
 
 @media screen and (min-width: $tablet) {
