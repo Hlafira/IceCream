@@ -26,6 +26,8 @@
 // сплошная кнопка
 .button_fill {
   background-color: var(--primary-btn-color);
+  transition: background-color 250ms var(--time-function);
+
   &:hover {
     background-color: var(--secondary-btn-color);
   }
@@ -36,6 +38,7 @@
   padding: 10px 33px;
   border: 2px solid var(--primary-btn-color);
   background-color: transparent;
+  transition: border-color 250ms var(--time-function);
 
   &:hover {
     border-color: var(--secondary-btn-color);
@@ -47,7 +50,7 @@
   color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 1999px) {
+@media screen and (max-width: 1199px) {
   .button_small {
     font-size: 8px;
     line-height: 9px;

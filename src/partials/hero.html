@@ -1,9 +1,10 @@
-<section class="section hero">
-  <div class="container">
-    <!-- title -->
-    <h1 class="hero__title">
-      ice cream made with <span class="hero__important">passion</span>
-    </h1>
+<section class="hero">
+  <div class="container hero__container">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__important">passion</span>
+      </h1>
+    
+
     <!-- links -->
     <div class="hero__links">
       <a
@@ -11,7 +12,7 @@
         class="button button_transparent button_small hero__button"
         >Products</a
       >
-      <a href="" class="hero__link">How it's made?</a>
+      <a href="#about" class="hero__link">How it's made?</a>
     </div>
 
     <!-- cards -->
@@ -22,14 +23,22 @@
       </li>
 
       <li class="hero__card">
-        <div class="hero__number">16</div>
-        <div class="hero__object">cafes</div>
+        <div class="hero__number">23</div>
+        <div class="hero__object">food trucks</div>
       </li>
     </ul>
 
     <!-- description -->
     <div class="hero__description">
-      <picture>
+      <picture class="hero__image">
+          <source
+            srcset="
+              ./images/desktop/hero/ice-cream-plate-225.png    1x,
+              ./images/desktop/hero/ice-cream-plate-225@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
         <source
           srcset="
             ./images/tablet/hero/ice-cream-plate-152.png    1x,
@@ -38,26 +47,19 @@
           media="(min-width: 768px)"
           type="image/png"
         />
-        <source
-          srcset="
-            ./images/desktop/hero/ice-cream-plate-225.png    1x,
-            ./images/desktop/hero/ice-cream-plate-225@2x.png 2x
-          "
-          media="(min-width: 1200px)"
-          type="image/png"
-        />
+        
         <img
           src="./images/desktop/hero/ice-cream-plate-225.png"
           alt="Plate with ice-cream"
         />
       </picture>
       <div class="hero__text">
-        <div class="hero__paragrap">
+        <div class="hero__paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </div>
         <a href="" class="hero__arrow">
-          <svg><use href="./images/icons.svg#icon-long-arrow"></use></svg>
+          <svg class="hero__svg"><use href="./images/icons.svg#icon-long-arrow"></use></svg>
         </a>
       </div>
     </div>
@@ -70,9 +72,25 @@
           ./images/mobile/hero/hero-ice-cream-170.png    1x,
           ./images/mobile/hero/hero-ice-cream-170@2x.png 2x
         "
-        media="(max-width:481px)"
+        media="(max-width:677px)"
+        />
+        <source
+          srcset="
+            ./images/desktop/hero/hero-ice-cream-484.png       1x,
+            ./images/desktop/hero/hero-ice-cream-484@2x.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+      <source
+        srcset="
+          ./images/tablet/hero/hero-ice-cream-270.png    1x,
+          ./images/tablet/hero/hero-ice-cream-270@2x.png 2x
+        "
+        media="(min-width:678px)"
       />
-      <img src="./images/mobile/hero/hero-ice-cream-170.png" alt="ice-cream" />
+      <img class="hero__main-img" src="./images/mobile/hero/hero-ice-cream-170.png" alt="ice-cream" />
     </picture>
   </div>
+  </div>
 </section>
+
