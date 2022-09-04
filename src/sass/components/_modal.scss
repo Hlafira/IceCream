@@ -1,0 +1,70 @@
+.modal {
+  width: 88%;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+    height: 966px;
+  }
+}
+
+.modal {
+  position: absolute;
+
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media screen and (min-width: $tablet) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  padding: 28px;
+
+  background-color: var(--card-background-color);
+  border-radius: 10px;
+  border: 2px solid var(--primary-btn-color);
+}
+
+.modal__close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  @include flex-center();
+  width: 33px;
+  height: 33px;
+  padding: 0;
+
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+
+.modal__btn-svg {
+  position: absolute;
+  transition: fill 250ms var(--time-function);
+
+  .modal__close-button:hover &,
+  .modal__close-button:focus & {
+    fill: var(--secondary-btn-color);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .modal {
+    height: 644px;
+    width: 568px;
+  }
+
+  .modal__close-button {
+    width: 59px;
+    height: 59px;
+  }
+}
+
+.modal__close-button:hover,
+.modal__close-button:focus {
+  border-color: var(--secondary-btn-color);
+}
