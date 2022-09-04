@@ -1,0 +1,143 @@
+.title {
+  text-align: center;
+  text-transform: uppercase;
+
+  &_light {
+    color: #fcfcfc;
+  }
+
+  &_dark {
+    color: #000000;
+  }
+
+  &_header {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+  }
+
+  &_label {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.title_lable {
+  margin-bottom: 12px;
+}
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .title_header {
+    margin-bottom: 32px;
+  }
+  .about {
+    &_thumb_picture {
+      margin-bottom: 40px;
+    }
+    &_text {
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.62;
+    }
+    &_text_tablet {
+      display: none;
+    }
+    &_picture {
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+
+      box-shadow: 0px -24px 0px rgba(248, 210, 78, 0.7),
+        0px -32px 30px rgba(153, 114, 23, 0.25);
+      overflow: hidden;
+    }
+  }
+  .button {
+    background-color: #f8d24e;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .title_header {
+    margin-bottom: 40px;
+  }
+  .about {
+    &_thumb {
+      display: flex;
+      column-gap: 36px;
+      justify-content: space-around;
+    }
+    &_thumb_picture {
+      display: flex;
+    }
+    &_picture {
+      width: 333px;
+      height: 333px;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+
+      box-shadow: 0px -24px 0px rgba(248, 210, 78, 0.7),
+        0px -32px 30px rgba(153, 114, 23, 0.25);
+    }
+    &_thumb_text {
+      display: flex;
+      flex-direction: column;
+      row-gap: 14px;
+      width: auto;
+      padding-top: 39px;
+      font-size: 12px;
+      line-height: 1.76;
+      color: #fcfcfc;
+    }
+  }
+  .button {
+    background-color: #f8d24e;
+    margin-top: 26px;
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .title_header {
+    margin-bottom: 82px;
+  }
+  .about {
+    &_thumb {
+      column-gap: 100px;
+    }
+    &_thumb_picture {
+      display: flex;
+    }
+    &_picture {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0px -24px 0px rgba(248, 210, 78, 0.7),
+        0px -32px 30px rgba(153, 114, 23, 0.25);
+    }
+    &_thumb_text {
+      padding-top: 90px;
+      padding-right: 105px;
+      font-size: 14px;
+      line-height: 1.94;
+    }
+  }
+
+  .button {
+    background-color: #f8d24e;
+    margin-top: 26px;
+    width: fit-content;
+  }
+}
