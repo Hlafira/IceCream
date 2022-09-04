@@ -20,17 +20,25 @@
     stroke: currentColor;
     margin-left: 16px;
   }
+
+  &:focus,
+  &:active {
+    color: var(--primary-text-color);
+  }
 }
 
 // сплошная кнопка
 .button_fill {
   background-color: var(--primary-btn-color);
-  transition: background-color 250ms var(--time-function);
-
-  &:hover,
+  transition: background-color 250ms var(--time-function),
+    color 250ms var(--time-function);
+  &:hover {
+    background-color: var(--secondary-btn-color);
+  }
   &:focus,
   &:active {
     background-color: var(--secondary-btn-color);
+    // color: var(--primary-text-color);
   }
 }
 
@@ -39,9 +47,12 @@
   padding: 10px 33px;
   border: 2px solid var(--primary-btn-color);
   background-color: transparent;
-  transition: border-color 250ms var(--time-function);
+  transition: border-color 250ms var(--time-function),
+    color 250ms var(--time-function);
 
-  &:hover,
+  &:hover {
+    border-color: var(--secondary-btn-color);
+  }
   &:focus,
   &:active {
     border-color: var(--secondary-btn-color);
@@ -55,7 +66,7 @@
 
 @media screen and (max-width: 1199px) {
   .button_small {
-    @include font(8px, 400, 9px);
+    @include font(8px, 600, 10px);
     padding: 6px 13px;
     border-radius: 8px;
   }
