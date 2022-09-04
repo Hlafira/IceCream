@@ -18,24 +18,22 @@
   }
 
   &_label {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
+    margin-bottom: 12px;
   }
 }
 
-.title_lable {
-  margin-bottom: 12px;
-}
-
 .about {
-  padding-top: 60px;
   padding-bottom: 40px;
 }
 
 @media screen and (max-width: 767px) {
   .title_header {
-    margin-bottom: 32px;
+    margin-bottom: 54px;
+    margin-left: 34px;
+    margin-right: 34px;
   }
   .about {
     &_thumb_picture {
@@ -46,6 +44,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 1.62;
+      text-align: center;
     }
     &_text_tablet {
       display: none;
@@ -57,20 +56,35 @@
 
       box-shadow: 0px -24px 0px rgba(248, 210, 78, 0.7),
         0px -32px 30px rgba(153, 114, 23, 0.25);
-      overflow: hidden;
     }
   }
-  .button {
+  .button_about {
     background-color: #f8d24e;
     align-items: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 @media screen and (min-width: $tablet) {
+  .about {
+    padding-bottom: 60px;
+  }
   .title_header {
-    margin-bottom: 40px;
+    margin-bottom: 66px;
   }
   .about {
+    &_header {
+      font-size: 34px;
+      line-height: 1.26;
+    }
+
+    &_label {
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 1.22;
+    }
     &_thumb {
       display: flex;
       column-gap: 36px;
@@ -100,18 +114,27 @@
       color: #fcfcfc;
     }
   }
-  .button {
+  .button_about {
     background-color: #f8d24e;
-    //margin-top: 26px;
+    margin-top: 26px;
     width: fit-content;
   }
 }
 
 @media screen and (min-width: $desktop) {
   .title_header {
-    margin-bottom: 82px;
+    margin-bottom: 121px;
   }
   .about {
+    &_header {
+      font-size: 36px;
+      line-height: 1.25;
+    }
+
+    &_label {
+      font-size: 30px;
+      line-height: 1.23;
+    }
     &_thumb {
       column-gap: 100px;
     }
@@ -133,11 +156,5 @@
       font-size: 14px;
       line-height: 1.94;
     }
-  }
-
-  .button {
-    background-color: #f8d24e;
-    // margin-top: 26px;
-    width: fit-content;
   }
 }

@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
-  .section.advantages {
-    padding-bottom: 36px;
+  .container.advantages {
+    padding-bottom: 58px;
   }
   .advantages {
     text-align: center;
@@ -21,8 +21,8 @@
       margin-bottom: 18px;
     }
     & .text {
-      margin-left: 45px;
-      margin-right: 45px;
+      // margin-left: 45px;
+      // margin-right: 45px;
       font-size: 12px;
       line-height: 1.7;
       letter-spacing: 0;
@@ -56,8 +56,8 @@
   }
 }
 @media screen and (min-width: $tablet) {
-  .section.advantages {
-    padding-bottom: 40px;
+  .container.advantages {
+    padding-bottom: 204px;
   }
   .advantages {
     text-align: center;
@@ -74,9 +74,8 @@
       margin-left: 76px;
     }
     & .title {
-      font-size: 36px;
-      line-height: 1.17;
-      text-transform: uppercase;
+      font-size: 48px;
+      line-height: 1.23;
       margin-bottom: 16px;
     }
     & .text {
@@ -91,7 +90,7 @@
       height: 50px;
       border-radius: 50%;
       background-color: var(--primary-btn-color);
-      margin-bottom: 16px;
+      margin-bottom: 32px;
 
       &::before {
         content: '';
@@ -113,7 +112,7 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .section.advantages {
+  .container.advantages {
     padding-bottom: 86px;
   }
   .advantages {
@@ -131,14 +130,16 @@
       margin-left: 76px;
     }
     & .title {
-      font-size: 36px;
-      line-height: 1.17;
-      text-transform: uppercase;
+      font-size: 58px;
+      line-height: 1.22;
       margin-bottom: 16px;
     }
     & .text {
       font-size: 16px;
       line-height: 1.76;
+    }
+    &_png {
+      margin-bottom: 40px;
     }
   }
 }
