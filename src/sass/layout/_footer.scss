@@ -84,6 +84,7 @@
     border-top: 1px solid #E1E1E1;
 }
         @media screen and (min-width: 320px) and (max-width: 767px) {
+            
             .social-title {
                 max-width: 250px;
             }
@@ -98,6 +99,7 @@
         } 
 
         @media screen and (min-width: $tablet) and (max-width: 1199px) {
+
             .social-title {
                 font-size: 26px;
                 line-height: 1.23;
@@ -180,6 +182,7 @@
             }
         }
         @media screen and (min-width: $desktop) {
+
             .footer-social__box {
                 display: flex;
                 justify-content: space-between;
