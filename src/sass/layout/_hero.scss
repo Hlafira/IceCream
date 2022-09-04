@@ -59,17 +59,20 @@
   &__main-picture {
     display: block;
     margin: 0 auto;
-    width: auto;
+
     object-fit: cover;
     width: 160px;
-
-    // animation: backInUp; //nimate__fadeInLeft; //fadeInDown; //backInDown; /* referring directly to the animation's @keyframe declaration */
-    // animation-duration: 0.7s;
   }
 
   &__main-img {
     filter: drop-shadow(0 0 10px rgba(252, 252, 252, 0.44));
     -webkit-filter: drop-shadow(0 0 10px rgba(252, 252, 252, 0.44));
+    opacity: 0;
+  }
+
+  &__main-picture.visible {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
