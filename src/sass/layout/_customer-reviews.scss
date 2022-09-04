@@ -34,11 +34,22 @@
 }
 
 .customer-description {
-  margin-bottom: 14px;
   font-weight: 500;
   font-size: 20px;
   line-height: 186%;
   color: var(--primary-title-color);
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-list {
+  padding-bottom: 14px;
+}
+
+.slick-dots {
+  bottom: -12px;
 }
 
 .slick-dots li {
@@ -88,8 +99,11 @@
     letter-spacing: 0.04em;
   }
 
+  .slick-list {
+    padding-bottom: 32px;
+  }
+
   .customer-description {
-    margin-bottom: 32px;
     font-size: 16px;
   }
 }
