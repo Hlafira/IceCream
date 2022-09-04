@@ -18,6 +18,8 @@
     font-family: 'Seymour One';
     text-transform: uppercase;
     color: var(--primary-text-color);
+    animation: zoomInDown; //nimate__fadeInLeft; //fadeInDown; //backInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.7s;
   }
 
   &__important {
@@ -60,6 +62,9 @@
     width: auto;
     object-fit: cover;
     width: 160px;
+
+    // animation: backInUp; //nimate__fadeInLeft; //fadeInDown; //backInDown; /* referring directly to the animation's @keyframe declaration */
+    // animation-duration: 0.7s;
   }
 
   &__main-img {
@@ -99,6 +104,11 @@
       display: flex;
       gap: 33px;
       align-items: center;
+    }
+
+    .hero__image {
+      animation: rotateIn; /* referring directly to the animation's @keyframe declaration */
+      animation-duration: 0.6s;
     }
 
     &__paragraph {
@@ -230,5 +240,15 @@
       filter: drop-shadow(0 0 30px rgba(252, 252, 252, 0.44));
       -webkit-filter: drop-shadow(0 0 30px rgba(252, 252, 252, 0.44));
     }
+  }
+}
+
+@keyframes showIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
