@@ -1,0 +1,133 @@
+.reviews-section {
+  padding-top: 223px;
+  padding-bottom: 394px;
+  text-align: center;
+  background-image: url(../images/mobile/mobile-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.reviews-container {
+  padding: 0 20px;
+}
+
+.customer-photo {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 32px;
+}
+
+.reviews-container__text-wrapper {
+  padding: 34px 39px;
+  margin-bottom: 30px;
+  background-color: #84a178;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.reviews-container__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 255%;
+  color: var(--primary-text-color);
+}
+
+.customer-description {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+  color: var(--primary-title-color);
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-list {
+  padding-bottom: 14px;
+}
+
+.slick-dots {
+  bottom: -12px;
+}
+
+.slick-dots li {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+
+.slick-dots li button {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+}
+
+.slick-dots li button:before {
+  width: 12px;
+  height: 12px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #d9d9d9;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--section-color);
+}
+
+@media screen and (min-width: $tablet) {
+  .reviews-section {
+    background-image: url(../images/tablet/tablet-bg.jpg);
+  }
+
+  .reviews-container__text-wrapper {
+    padding: 29px 80px 28px;
+    border-radius: 24px;
+  }
+
+  .reviews-container__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+
+  .slick-list {
+    padding-bottom: 32px;
+  }
+
+  .customer-description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .reviews-section {
+    padding-top: 456px;
+    background-image: url(../images/desktop/desktop-bg.jpg);
+  }
+
+  .reviews-container {
+    padding: 0 116px;
+  }
+
+  .reviews-container__text-wrapper {
+    padding: 39px 109px 47px;
+    border-radius: 24px;
+  }
+
+  .reviews-container__text {
+    font-size: 16px;
+  }
+
+  .customer-description {
+    color: var(--secondary-black-text-color);
+  }
+}
