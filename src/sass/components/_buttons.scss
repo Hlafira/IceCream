@@ -4,8 +4,7 @@
   align-items: center;
   padding: 12px 35px;
 
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 600, 18px);
   font-weight: 600;
   color: var(--primary-title-color);
 
@@ -26,7 +25,11 @@
 // сплошная кнопка
 .button_fill {
   background-color: var(--primary-btn-color);
-  &:hover {
+  transition: background-color 250ms var(--time-function);
+
+  &:hover,
+  &:focus,
+  &:active {
     background-color: var(--secondary-btn-color);
   }
 }
@@ -36,8 +39,11 @@
   padding: 10px 33px;
   border: 2px solid var(--primary-btn-color);
   background-color: transparent;
+  transition: border-color 250ms var(--time-function);
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border-color: var(--secondary-btn-color);
   }
 }
@@ -47,10 +53,9 @@
   color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 1999px) {
+@media screen and (max-width: 1199px) {
   .button_small {
-    font-size: 8px;
-    line-height: 9px;
+    @include font(8px, 400, 9px);
     padding: 6px 13px;
     border-radius: 8px;
   }
