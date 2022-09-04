@@ -1,1 +1,1 @@
-
+import './js/menu.js';
