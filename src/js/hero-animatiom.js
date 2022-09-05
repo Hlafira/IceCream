@@ -1,12 +1,12 @@
-const element = document.querySelector('.hero__title');
-const element2 = document.querySelector('.hero__main-img');
+const hero__title = document.querySelector('.hero__title');
+const hero__img = document.querySelector('.hero__main-img');
 
-element.classList.add('animate__animated', 'animate__zoomInDown');
-element.style.setProperty('--animate-duration', '0.1s');
+hero__title.classList.add('animate__animated', 'animate__zoomInDown');
+hero__title.style.setProperty('--animate-duration', '1.5s');
 
-element.addEventListener('animationend', () => {
-  element2.classList.add('visible');
+hero__title.addEventListener('animationend', () => {
+  hero__img.classList.add('visible');
 
-  element2.classList.add('animate__animated', 'animate__zoomIn'); //'animate__zoomIn');
-  element2.style.setProperty('--animate-duration', '0.3s');
+  hero__img.classList.add('animate__animated', 'animate__zoomIn'); //'animate__zoomIn');
+  hero__img.style.setProperty('--animate-duration', '0.5s');
 });
