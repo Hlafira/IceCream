@@ -159,3 +159,35 @@
     }
   }
 }
+
+.modal {
+  &.about {
+    width: 568px;
+    height: 449px;
+  }
+  &_about {
+    &_title {
+      font-family: 'Seymour One';
+
+      font-weight: 400;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.4;
+      color: #000000;
+
+      text-align: center;
+    }
+    &_text {
+      font-family: 'Montserrat';
+      font-size: 16px;
+      line-height: 1.4;
+      color: #000000;
+      text-align: center;
+    }
+    &_video {
+      margin: 30px;
+      width: 448px;
+      height: 205px;
+    }
+  }
+}
