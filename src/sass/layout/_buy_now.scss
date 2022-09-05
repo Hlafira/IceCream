@@ -9,16 +9,30 @@
   background-color: rgba(248, 210, 78, 0.1);
   border: 1px solid var(--section-color);
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.backdrop-form-buy__box textarea {
+  resize: none;
+}
+
+.backdrop-form-buy__box input:focus,
+.backdrop-form-buy__box textarea:focus {
+  border: 2px solid var(--secondary-btn-color);
+  outline: none;
 }
 
 .backdrop-form-buy__box-check {
   text-align: center;
+  cursor: pointer;
 }
 
 .backdrop-form-buy__choice {
   color: var(--secondary-black-text-color);
   @include font($fs: 16px, $fw: 700, $lh: 20px);
   text-transform: uppercase;
+  cursor: pointer;
+  padding-bottom: 30px;
 }
 
 .backdrop-form-buy__text {
@@ -60,6 +74,11 @@
   background-color: #96af8c;
 }
 
+// .backdrop-form-buy__input-check-ice-cream:focus
+//   + .backdrop-form-buy__choice-ice-cream::before {
+//   border: 2px solid var(--secondary-btn-color);
+// }
+
 .backdrop-form-buy__png-ice-coffee {
   width: 131px;
   height: 130px;
@@ -94,6 +113,11 @@
   background-color: #efd478;
 }
 
+// .backdrop-form-buy__input-check-ice-coffee:focus
+//   + .backdrop-form-buy__choice-ice-coffee::before {
+//   border: 2px solid var(--secondary-btn-color);
+// }
+
 .backdrop-form-buy__png-milkshakes {
   width: 131px;
   height: 130px;
@@ -126,6 +150,11 @@
   + .backdrop-form-buy__choice-milkshakes::before {
   background-color: #d6936d;
 }
+
+// .backdrop-form-buy__input-check-milkshakes:focus
+//   + .backdrop-form-buy__choice-milkshakes::before {
+//   border: 2px solid var(--secondary-btn-color);
+// }
 
 .backdrop-form-buy__btn {
   display: block;

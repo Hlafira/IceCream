@@ -61,7 +61,7 @@
   transform: translateY(100%);
 
   transition: opacity 250ms var(--time-function),
-    visibolity 250ms var(--time-function), transform 500ms var(--time-function);
+    visibility 250ms var(--time-function), transform 500ms var(--time-function);
 }
 
 .mobile-menu.is-open {
