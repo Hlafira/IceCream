@@ -1,1 +1,304 @@
+.backdrop-form-buy input {
+  color: var(--primary-title-color);
+}
 
+.backdrop-form-buy__box input,
+.backdrop-form-buy__box textarea {
+  display: block;
+  width: 100%;
+  background-color: rgba(248, 210, 78, 0.1);
+  border: 1px solid var(--section-color);
+  border-radius: 10px;
+}
+
+.backdrop-form-buy__box-check {
+  text-align: center;
+}
+
+.backdrop-form-buy__choice {
+  color: var(--secondary-black-text-color);
+  @include font($fs: 16px, $fw: 700, $lh: 20px);
+  text-transform: uppercase;
+}
+
+.backdrop-form-buy__text {
+  color: var(--secondary-black-text-color);
+  font-family: Seymour One;
+  text-align: center;
+}
+
+.backdrop-form-buy__png-ice-cream {
+  width: 131px;
+  height: 130px;
+  margin-bottom: 27px;
+  border-radius: 50%;
+  background-image: url(../images/mobile/modal/ice-cream-131.png);
+
+  box-shadow: 0px 7.4px 0px rgba(156, 190, 143, 0.7),
+    0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.backdrop-form-buy__choice-ice-cream {
+  &::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    z-index: -1;
+    cursor: pointer;
+
+    border: 2px solid #96af8c;
+    border-radius: 15.7808px;
+    width: 131px;
+    height: 135px;
+
+    transition: background-color 250ms var(--time-function);
+  }
+}
+
+.backdrop-form-buy__input-check-ice-cream:checked
+  + .backdrop-form-buy__choice-ice-cream::before {
+  background-color: #96af8c;
+}
+
+.backdrop-form-buy__png-ice-coffee {
+  width: 131px;
+  height: 130px;
+  margin-bottom: 27px;
+
+  border-radius: 50%;
+  background-image: url(../images/mobile/modal/ice-coffee-131.png);
+
+  box-shadow: 0px 7.4px 0px rgba(248, 210, 78, 0.7),
+    0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+}
+
+.backdrop-form-buy__choice-ice-coffee {
+  &::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    z-index: -1;
+    cursor: pointer;
+
+    border: 2px solid #efd478;
+    border-radius: 15.7808px;
+    width: 131px;
+    height: 135px;
+
+    transition: background-color 250ms var(--time-function);
+  }
+}
+
+.backdrop-form-buy__input-check-ice-coffee:checked
+  + .backdrop-form-buy__choice-ice-coffee::before {
+  background-color: #efd478;
+}
+
+.backdrop-form-buy__png-milkshakes {
+  width: 131px;
+  height: 130px;
+  margin-bottom: 27px;
+  border-radius: 50%;
+  background-image: url(../images/mobile/modal/milkshakes-131.png);
+
+  box-shadow: 0px 7.4px 0px rgba(213, 117, 63, 0.7),
+    0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+}
+
+.backdrop-form-buy__choice-milkshakes {
+  &::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    z-index: -1;
+    cursor: pointer;
+
+    border: 2px solid #d6936d;
+    border-radius: 15.7808px;
+    width: 131px;
+    height: 135px;
+
+    transition: background-color 250ms var(--time-function);
+  }
+}
+
+.backdrop-form-buy__input-check-milkshakes:checked
+  + .backdrop-form-buy__choice-milkshakes::before {
+  background-color: #d6936d;
+}
+
+.backdrop-form-buy__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop-form-buy__text {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .backdrop-form-buy__png {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .backdrop-form-buy__box {
+    & input {
+      height: 32px;
+      margin-bottom: 12px;
+    }
+
+    & textarea {
+      height: 64px;
+      margin-bottom: 24px;
+    }
+
+    & input,
+    & textarea {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+  }
+
+  .backdrop-form-buy__box-check {
+    margin-bottom: 40px;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+
+  .backdrop-form-buy__box-box-check {
+    margin-bottom: 44px;
+  }
+
+  .backdrop-form-buy__btn {
+    height: 32px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 49px;
+    padding-left: 49px;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .backdrop-form-buy__choice-ice-cream {
+    &::before {
+      top: 135px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .backdrop-form-buy__choice-ice-coffee {
+    &::before {
+      top: 353px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .backdrop-form-buy__choice-milkshakes {
+    &::before {
+      top: 571px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .backdrop-form-buy__text {
+    @include font($fs: 29px, $fw: 400, $lh: 28px);
+    margin-bottom: 40px;
+  }
+
+  .modal__backdrop-form-buy {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+
+  .backdrop-form-buy__box-box-check {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+
+  .backdrop-form-buy__png-ice-cream {
+    width: 131px;
+    height: 130px;
+  }
+
+  .backdrop-form-buy__png-ice-coffee {
+    width: 131px;
+    height: 130px;
+  }
+
+  .backdrop-form-buy__png-milkshakes {
+    width: 131px;
+    height: 130px;
+  }
+
+  .backdrop-form-buy__box input,
+  .backdrop-form-buy__box textarea {
+    width: 368px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .backdrop-form-buy__box {
+    & input {
+      height: 42px;
+      margin-bottom: 16px;
+    }
+
+    & textarea {
+      height: 84px;
+      margin-bottom: 32px;
+    }
+
+    & input,
+    & textarea {
+      padding-top: 11px;
+      padding-bottom: 11px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+  }
+
+  .backdrop-form-buy__btn {
+    height: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 49px;
+    padding-left: 49px;
+    line-height: 1.2142;
+  }
+
+  .backdrop-form-buy__choice-ice-cream {
+    &::before {
+      top: 163px;
+      left: 54px;
+    }
+  }
+
+  .backdrop-form-buy__choice-ice-coffee {
+    &::before {
+      top: 163px;
+      left: 217px;
+    }
+  }
+
+  .backdrop-form-buy__choice-milkshakes {
+    &::before {
+      top: 163px;
+      left: 380px;
+    }
+  }
+}
