@@ -1,6 +1,6 @@
 .reviews-section {
   padding-top: 223px;
-  padding-bottom: 394px;
+  padding-bottom: 393px;
   text-align: center;
   background-image: url(../images/mobile/mobile-bg.jpg);
   background-repeat: no-repeat;
@@ -84,6 +84,7 @@
 
 @media screen and (min-width: $tablet) {
   .reviews-section {
+    padding-bottom: 384px;
     background-image: url(../images/tablet/tablet-bg.jpg);
   }
 
@@ -111,6 +112,7 @@
 @media screen and (min-width: $desktop) {
   .reviews-section {
     padding-top: 456px;
+    padding-bottom: 196px;
     background-image: url(../images/desktop/desktop-bg.jpg);
   }
 

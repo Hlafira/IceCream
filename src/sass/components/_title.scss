@@ -18,8 +18,8 @@
 
   &_label {
     font-weight: 800;
-    font-size: 18px;
-    line-height: 1.22;
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
 
@@ -33,5 +33,18 @@
   }
   &_dark {
     color: #000000;
+  }
+}
+
+.modal-title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-title-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
