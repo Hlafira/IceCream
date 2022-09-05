@@ -183,7 +183,7 @@
 
   .header-nav__list {
     @include flex-center();
-    margin-left: 241px;
+    margin-left: 260px;
     gap: 27px;
     @include font($fs: 16px, $fw: 700, $lh: 20px);
   }

@@ -36,9 +36,9 @@
         <li class="header-nav__item">
           <a class="header-nav__link" href="#hero">Home</a>
         </li>
-        <li class="header-nav__item">
+        <!-- <li class="header-nav__item">
           <a class="header-nav__link" href="#about">About us</a>
-        </li>
+        </li> -->
         <li class="header-nav__item">
           <a class="header-nav__link" href="#about">How it’s made?</a>
         </li>
@@ -128,9 +128,9 @@
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#hero">Home</a>
         </li>
-        <li class="mobile-menu__item">
+        <!-- <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#customer-reviews">About us</a>
-        </li>
+        </li> -->
         <li class="mobile-menu__item">
           <a class="mobile-menu__link" href="#about">How it’s made?</a>
         </li>
@@ -159,7 +159,7 @@
 
   <!-- Modal window -->
   <div class="backdrop is_hidden" data-modal>
-    <div class="modal">
+    <div class="modal modal__backdrop-form-buy">
       <button type="button" class="modal__close-button" data-modal-close>
         <svg class="modal__btn-svg" width="10" height="10">
           <use href="./images/icons.svg#icon-close"></use>
@@ -170,7 +170,8 @@
       <form class="backdrop-form-buy" autocomplete="on">
         <p class="backdrop-form-buy__text">Buy now</p>
 
-        <picture class="backdrop-form-buy__picture">
+        <div class="backdrop-form-buy__box-box-check">
+          <!-- <picture class="backdrop-form-buy__picture">
           <source
             srcset="
               ./images/mobile/modal/ice-cream-131.png    1x,
@@ -178,11 +179,134 @@
             "
           />
           <img
-            class="backdrop-form-buy__png"
+            class="backdrop-form-buy__png backdrop-form-buy__png-ice-cream"
             src="./images/mobile/modal/ice-cream-131.png"
             alt="Ice-cream"
           />
-        </picture>
+        </picture> -->
+
+          <div class="backdrop-form-buy__box-check">
+            <input
+              class="backdrop-form-buy__input-check-ice-cream visually-hidden"
+              type="checkbox"
+              name="backdrop-form-buy__choice-ice-cream"
+              id="backdrop-form-buy__choice-ice-cream"
+            />
+            <label
+              class="backdrop-form-buy__choice backdrop-form-buy__choice-ice-cream"
+              for="backdrop-form-buy__choice-ice-cream"
+            >
+              <div
+                class="backdrop-form-buy__png backdrop-form-buy__png-ice-cream"
+              ></div>
+              ice cream</label
+            >
+          </div>
+
+          <!-- <picture class="backdrop-form-buy__picture">
+          <source
+            srcset="
+              ./images/mobile/modal/ice-coffee-131.png    1x,
+              ./images/mobile/modal/ice-coffee-131@2x.png 2x
+            "
+          />
+          <img
+            class="backdrop-form-buy__png backdrop-form-buy__png-ice-coffee"
+            src="./images/mobile/modal/ice-coffee-131.png"
+            alt="Ice-coffee"
+          />
+        </picture> -->
+
+          <div class="backdrop-form-buy__box-check">
+            <input
+              class="backdrop-form-buy__input-check-ice-coffee visually-hidden"
+              type="checkbox"
+              name="backdrop-form-buy__choice-ice-coffee"
+              id="backdrop-form-buy__choice-ice-coffee"
+            />
+            <label
+              class="backdrop-form-buy__choice backdrop-form-buy__choice-ice-coffee"
+              for="backdrop-form-buy__choice-ice-coffee"
+            >
+              <div
+                class="backdrop-form-buy__png backdrop-form-buy__png-ice-coffee"
+              ></div>
+              ice coffee</label
+            >
+          </div>
+
+          <!-- <picture class="backdrop-form-buy__picture">
+          <source
+            srcset="
+              ./images/mobile/modal/milkshakes-131.png    1x,
+              ./images/mobile/modal/milkshakes-131@2x.png 2x
+            "
+          />
+          <img
+            class="backdrop-form-buy__png backdrop-form-buy__png-milkshakes"
+            src="./images/mobile/modal/milkshakes-131.png"
+            alt="Milkshakes"
+          />
+        </picture> -->
+
+          <div class="backdrop-form-buy__box-check">
+            <input
+              class="backdrop-form-buy__input-check-milkshakes visually-hidden"
+              type="checkbox"
+              name="backdrop-form-buy__choice-milkshakes"
+              id="backdrop-form-buy__choice-milkshakes"
+            />
+            <label
+              class="backdrop-form-buy__choice backdrop-form-buy__choice-milkshakes"
+              for="backdrop-form-buy__choice-milkshakes"
+              ><div
+                class="backdrop-form-buy__png backdrop-form-buy__png-milkshakes"
+              ></div>
+              milkshake</label
+            >
+          </div>
+        </div>
+
+        <div class="backdrop-form-buy__box">
+          <input
+            class="backdrop-form-buy__name-input"
+            placeholder="Name"
+            type="text"
+            name="name"
+            id="backdrop-form-buy__name"
+            required
+            autofocus
+            pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+            minlength="2"
+          />
+        </div>
+
+        <div class="backdrop-form-buy__box">
+          <input
+            class="backdrop-form-buy__phone-input"
+            placeholder="Phone"
+            type="tel"
+            name="backdrop-form-buy__phone"
+            id="backdrop-form-buy__phone"
+            required
+            autofocus
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+          />
+        </div>
+
+        <div class="backdrop-form-buy__box">
+          <textarea
+            class="backdrop-form-buy__comment"
+            name="backdrop-form-buy__comment"
+            id="backdrop-form-buy__comment"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+
+        <button class="button button_fill backdrop-form-buy__btn" type="button">
+          Submit
+        </button>
       </form>
     </div>
   </div>
