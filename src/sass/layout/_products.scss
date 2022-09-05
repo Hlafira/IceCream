@@ -1,574 +1,520 @@
- 
-.products-svg-arrow{
-    transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.products-svg-arrow {
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-   &:hover{
-
+  &:hover {
     width: 80px;
-   
-   
-   }
-   
+  }
 }
 
 //  ---------------MOBILE----------------------
- @media screen and (max-width: 767px) {
-    .products {
-    
-            background-image: url(../images/mobile/mobile-bg.jpg);
-    
-            background-repeat: repeat;
-            background-size: contain;
-            background-position: center;
-          
-        }
-    
-        .products-list__card-ice {
-            
-            position: relative;
-           
-            padding-top: 123px;
-            padding-bottom: 60px;
-            padding-left: 40px;
-            padding-right: 40px;
-            max-width: 280px;
-            min-height: 420px;
-            border-radius: 24px;
-            background-color: var(--card-green-color);
-                margin-bottom: 164px;
-    
-            &::before {
-                content: "";
-                position: absolute;
-                top: 1%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                display: block;
-                width: 200px;
-                    height: 200px;
-                border-radius: 50%;
-    
-                background-color: var(--card-green-color);
-                box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-            }
-        }
-    
-        .products-list__card-coffee {
-            position: relative;
-            padding-top: 123px;
-            padding-bottom: 60px;
-            padding-left: 40px;
-                padding-right: 40px;
-        max-width: 280px;
-            min-height: 420px;
-            border-radius: 24px;
-            background-color: var(--card-yellow-color);
-            margin-bottom: 164px;
-    
-            &::before {
-                content: "";
-                position: absolute;
-                top: 1%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                display: block;
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-    
-                background-color: var(--card-yellow-color);
-                box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-            }
-        }
-    
-        .products-list__card-milkshakes {
-            position: relative;
-            padding-top: 105px;
-            padding-bottom: 60px;
-            padding-left: 40px;
-                padding-right: 40px;
-        max-width: 280px;
-            min-height: 420px;
-            border-radius: 24px;
-            background-color: var(--card-brown-color);
-    
-            &::before {
-                content: "";
-                position: absolute;
-                top: 1%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                display: block;
-                width: 200px;
-                    height: 200px;
-                border-radius: 50%;
-    
-                background-color: var(--card-brown-color);
-                box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-            }
-        }
-    
-        .products-list {
-            justify-content: center;
-            gap: 32px;
-    
-            .products-list__card-tittle {
-                @include font($fs: 20px, $fw: 700, $lh: 24px);
-                text-align: center;
-                letter-spacing: 0.04em;
-                text-transform: uppercase;
-                color: #131313;
-                padding-bottom: 40px;
-            }
-    
-            .products-list__card-info {
-                @include font($fs: 14px, $fw: 400, $lh: 28px);
-               
-                /* or 28px */
-    
-                text-align: center;
-                letter-spacing: 0.04em;
-    
-                color: #131313;
-                padding-bottom: 60px;
-            }
-        }
-    
-        .products-tittles {
-                padding-bottom: 148px;
-               
-        }
-    
-        .products-tittle {
-            text-align: center;
-    
-            font-weight: 800;
-        font-size: 18px;
-            line-height: 22px;
-    
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-    
-            color: #000000;
-            margin-bottom: 12px;
-        }
-    
-        .products-subtittle {
-            text-align: center;
-            font-family: 'Seymour One';
-  
-        font-size: 30px;
-        line-height: 38px;
-         
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-    
-            color: #000000;
-        }
-    
-       
-    
-        .products-list__item {
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-    
-        .products-img {
-            position: absolute;
-            top: -1%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-    
-        }
-     
-  }
-    //  ---------------/MOBILE----------------------
+@media screen and (max-width: 767px) {
+  .products {
+    background-image: url(../images/mobile/mobile-bg.jpg);
 
-    // -----------------MIN-MOBILE-------------------
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .products-list__card-ice {
+    position: relative;
+    padding-top: 123px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 280px;
+    min-height: 420px;
+    border-radius: 24px;
+    background-color: var(--card-green-color);
+    margin-bottom: 164px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      background-color: var(--card-green-color);
+      box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    }
+  }
+
+  .products-list__card-coffee {
+    position: relative;
+    padding-top: 123px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 280px;
+    min-height: 420px;
+    border-radius: 24px;
+    background-color: var(--card-yellow-color);
+    margin-bottom: 164px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      background-color: var(--card-yellow-color);
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    }
+  }
+
+  .products-list__card-milkshakes {
+    position: relative;
+    padding-top: 105px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 280px;
+    min-height: 420px;
+    border-radius: 24px;
+    background-color: var(--card-brown-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      background-color: var(--card-brown-color);
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .products-list {
+    justify-content: center;
+    gap: 32px;
+
+    .products-list__card-tittle {
+      @include font($fs: 20px, $fw: 700, $lh: 24px);
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--secondary-black-text-color);
+      padding-bottom: 40px;
+    }
+
+    .products-list__card-info {
+      @include font($fs: 14px, $fw: 400, $lh: 25px);
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: var(--secondary-black-text-color);
+      padding-bottom: 60px;
+    }
+  }
+
+  .products-tittles {
+    padding-bottom: 148px;
+  }
+
+  .products-tittle {
+    text-align: center;
+    @include font($fs: 18px, $fw: 800, $lh: 22px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--secondary-black-text-color);
+    margin-bottom: 12px;
+  }
+
+  .products-subtittle {
+    text-align: center;
+    font-family: 'Seymour One';
+    @include font($fs: 30px, $fw: 400, $lh: 38px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--secondary-black-text-color);
+  }
+
+  .products-list__item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .products-img {
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .svg-use {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+//  ---------------/MOBILE----------------------
+
+// -----------------MIN-MOBILE-------------------
 
 @media screen and (max-width: 319px) {
-    .products-subtittle {
-        text-align: center;
-        font-family: 'Seymour One';
+  .products-subtittle {
+    text-align: center;
+    font-family: 'Seymour One';
+    @include font($fs: 23px, $fw: 400, $lh: 29px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-black-text-color);
+  }
+  .products-tittle {
+    text-align: center;
 
-        font-size: 23px;
-        line-height: 29px;
+    @include font($fs: 16px, $fw: 800, $lh: 19px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-
-        color: #000000;
-    }
-        .products-tittle {
-            text-align: center;
-    
-            font-weight: 800;
-            font-size: 16px;
-            line-height: 19px;
-    
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-    
-            color: #000000;
-            margin-bottom: 12px;
-        }
-              
-        
+    color: var(--secondary-black-text-color);
+    margin-bottom: 12px;
+  }
 }
 // -----------------/MIN-MOBILE-------------------
 
 // ------------TABLET-----------------
 @media screen and (min-width: 768px) {
-    .products {
+  .products {
+    background-image: url(../images/tablet/tablet-bg.jpg);
 
-        background-image: url(../images/tablet/tablet-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-      
+  .products-list__card-ice {
+    position: relative;
+    padding-top: 108px;
+    padding-bottom: 60px;
+    padding-left: 26px;
+    padding-right: 26px;
+    width: 224px;
+    height: 428px;
+    border-radius: 24px;
+    background-color: var(--card-green-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      min-width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      background-color: var(--card-green-color);
+      box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    }
+  }
+
+  .products-list__card-coffee {
+    position: relative;
+    padding-top: 108px;
+    padding-bottom: 60px;
+    padding-left: 26px;
+    padding-right: 26px;
+    width: 224px;
+    height: 428px;
+    border-radius: 24px;
+    background-color: var(--card-yellow-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      min-width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      background-color: var(--card-yellow-color);
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    }
+  }
+
+  .products-list__card-milkshakes {
+    position: relative;
+    padding-top: 108px;
+    padding-bottom: 60px;
+    padding-left: 26px;
+    padding-right: 26px;
+    width: 224px;
+    height: 428px;
+    border-radius: 24px;
+    background-color: var(--card-brown-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      min-width: 200px;
+      height: 200px;
+      border-radius: 50%;
+
+      background-color: var(--card-brown-color);
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .products-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+
+    .products-list__card-tittle {
+      @include font($fs: 22px, $fw: 700, $lh: 27px);
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+
+      color: var(--secondary-black-text-color);
+      padding-bottom: 40px;
     }
 
-    .products-list__card-ice {
-        position: relative;
-        padding-top: 108px;
-        padding-bottom: 60px;
-        padding-left: 26px;
-        padding-right: 26px;
-        width: 224px;
-        height: 428px;
-        border-radius: 24px;
-        background-color: var(--card-green-color);
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: -3%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: block;
-            min-width: 200px;
-            height: 200px;
-            border-radius: 50%;
-
-            background-color: var(--card-green-color);
-            box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-        }
+    .products-list__card-info {
+      @include font($fs: 14px, $fw: 400, $lh: 25px);
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: var(--secondary-black-text-color);
+      padding-bottom: 60px;
     }
+  }
 
-    .products-list__card-coffee {
-        position: relative;
-        padding-top: 108px;
-        padding-bottom: 60px;
-        padding-left: 26px;
-            padding-right: 26px;
-        width: 224px;
-        height: 428px;
-        border-radius: 24px;
-        background-color: var(--card-yellow-color);
+  .products-tittles {
+    padding-bottom: 200px;
+  }
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: -3%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: block;
-            min-width: 200px;
-            height: 200px;
-            border-radius: 50%;
+  .products-tittle {
+    text-align: center;
 
-            background-color: var(--card-yellow-color);
-            box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-        }
-    }
+    @include font($fs: 22px, $fw: 800, $lh: 27px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-    .products-list__card-milkshakes {
-        position: relative;
-        padding-top: 108px;
-        padding-bottom: 60px;
-        padding-left: 26px;
-            padding-right: 26px;
-        width: 224px;
-        height: 428px;
-        border-radius: 24px;
-        background-color: var(--card-brown-color);
+    color: var(--secondary-black-text-color);
+    margin-bottom: 12px;
+  }
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: -3%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: block;
-            min-width: 200px;
-            height: 200px;
-            border-radius: 50%;
+  .products-subtittle {
+    text-align: center;
+    font-family: 'Seymour One';
 
-            background-color: var(--card-brown-color);
-            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-        }
-    }
-
-    .products-list {
-        display: flex;
-        justify-content: center;
-        gap: 32px;
-
-        .products-list__card-tittle {
-        font-size: 22px;
-            line-height: 27px;
-            text-align: center;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-
-            color: #131313;
-            padding-bottom: 40px;
-        }
-
-        .products-list__card-info {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 176%;
-            /* or 28px */
-
-            text-align: center;
-            letter-spacing: 0.04em;
-
-            color: #131313;
-            padding-bottom: 60px;
-        }
-    }
-
-    .products-tittles {
-
-        padding-bottom: 200px;
-    }
-
-    .products-tittle {
-        text-align: center;
-
-        font-weight: 800;
-        font-size: 22px;
-            line-height: 27px;
-
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-
-        color: #000000;
-        margin-bottom: 12px;
-    }
-
-    .products-subtittle {
-        text-align: center;
-        font-family: 'Seymour One';
-
-font-size: 34px;
+    font-size: 34px;
     line-height: 43px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
+    @include font($fs: 34px, $fw: 400, $lh: 43px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
-        color: #000000;
-    }
+    color: var(--secondary-black-text-color);
+  }
 
-    .svg-use {
-        position: absolute;
-        top: 95%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+  .svg-use {
+    background-color: transparent;
+        border: none;
+        cursor: pointer;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-    .products-list__item {
-        position: relative;
-    }
+  .products-list__item {
+    position: relative;
+  }
 
-    .products-img {
-        position: absolute;
-        top: -6%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
+  .products-img {
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 // ------------/TABLET-----------------
 
-
-
-
 // --------------DESCTOP--------------
- @media screen and (min-width: 1200px) {
-     .products {
+@media screen and (min-width: 1200px) {
+  .products {
+    background-image: url(../images/desktop/desktop-bg.jpg);
 
-         background-image: url(../images/desktop/desktop-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1049px;
+  }
 
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: center;
-         height: 1049px;
-     }
+  .products-list__card-ice {
+    position: relative;
+    padding-top: 166px;
+    padding-bottom: 60px;
+    padding-left: 61px;
+    padding-right: 61px;
+    width: 368px;
+    height: 535px;
+    border-radius: 24px;
+    background-color: var(--card-green-color);
 
-     .products-list__card-ice {
-         position: relative;
-         padding-top: 166px;
-         padding-bottom: 60px;
-         padding-left: 61px;
-         padding-right: 61px;
-         width: 368px;
-         height: 535px;
-         border-radius: 24px;
-         background-color: var(--card-green-color);
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      min-width: 300px;
+      height: 300px;
+      border-radius: 50%;
 
-         &::before {
-             content: "";
-             position: absolute;
-             top: -3%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-             display: block;
-             min-width: 300px;
-             height: 300px;
-             border-radius: 50%;
+      background-color: var(--card-green-color);
+      box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    }
+  }
 
-             background-color: var(--card-green-color);
-             box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
-         }
-     }
+  .products-list__card-coffee {
+    position: relative;
+    padding-top: 166px;
+    padding-bottom: 60px;
+    padding-left: 61px;
+    padding-right: 61px;
+    width: 368px;
+    height: 535px;
+    border-radius: 24px;
+    background-color: var(--card-yellow-color);
 
-     .products-list__card-coffee {
-         position: relative;
-         padding-top: 166px;
-         padding-bottom: 60px;
-         padding-left: 61px;
-         padding-right: 61px;
-         width: 368px;
-         height: 535px;
-         border-radius: 24px;
-         background-color: var(--card-yellow-color);
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      min-width: 300px;
+      height: 300px;
+      border-radius: 50%;
 
-         &::before {
-             content: "";
-             position: absolute;
-             top: -3%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-             display: block;
-             min-width: 300px;
-             height: 300px;
-             border-radius: 50%;
+      background-color: var(--card-yellow-color);
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    }
+  }
 
-             background-color: var(--card-yellow-color);
-             box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
-         }
-     }
+  .products-list__card-milkshakes {
+    position: relative;
+    padding-top: 166px;
+    padding-bottom: 60px;
+    padding-left: 61px;
+    padding-right: 61px;
+    width: 368px;
+    height: 535px;
+    border-radius: 24px;
+    background-color: var(--card-brown-color);
 
-     .products-list__card-milkshakes {
-         position: relative;
-         padding-top: 166px;
-         padding-bottom: 60px;
-         padding-left: 61px;
-         padding-right: 61px;
-         width: 368px;
-         height: 535px;
-         border-radius: 24px;
-         background-color: var(--card-brown-color);
+    &::before {
+      content: '';
+      position: absolute;
+      top: -3%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      min-width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background-color: var(--card-brown-color);
+      box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    }
+  }
 
-         &::before {
-             content: "";
-             position: absolute;
-             top: -3%;
-             left: 50%;
-             transform: translate(-50%, -50%);
-             display: block;
-             min-width: 300px;
-             height: 300px;
-             border-radius: 50%;
+  .products-list {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
 
-             background-color: var(--card-brown-color);
-             box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
-         }
-     }
+    .products-list__card-tittle {
+      @include font($fs: 30px, $fw: 700, $lh: 37px);
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--secondary-black-text-color);
+      padding-bottom: 65px;
+    }
 
-     .products-list {
-         display: flex;
-         justify-content: center;
-         gap: 32px;
+    .products-list__card-info {
+      @include font($fs: 16px, $fw: 400, $lh: 28px);
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: var(--secondary-black-text-color);
+      padding-bottom: 60px;
+    }
+  }
 
-         .products-list__card-tittle {
-             font-size: 30px;
-             line-height: 37px;
-             text-align: center;
-             letter-spacing: 0.04em;
-             text-transform: uppercase;
+  .products-tittles {
+    padding-bottom: 303px;
+  }
 
-             color: #131313;
-             padding-bottom: 65px;
-         }
+  .products-tittle {
+    text-align: center;
+    @include font($fs: 30px, $fw: 800, $lh: 37px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-         .products-list__card-info {
-             font-weight: 400;
-             font-size: 16px;
-             line-height: 176%;
-             /* or 28px */
+    color: var(--secondary-black-text-color);
+    margin-bottom: 12px;
+  }
 
-             text-align: center;
-             letter-spacing: 0.04em;
+  .products-subtittle {
+    text-align: center;
+    font-family: 'Seymour One';
+    @include font($fs: 34px, $fw: 400, $lh: 43px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--secondary-black-text-color);
+  }
 
-             color: #131313;
-             padding-bottom: 60px;
-         }
-     }
+  .svg-use {
+    background-color: transparent;
+        border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-     .products-tittles {
+  .products-list__item {
+    position: relative;
+  }
 
-         padding-bottom: 303px;
-     }
-
-     .products-tittle {
-         text-align: center;
-
-         font-weight: 800;
-         font-size: 30px;
-         line-height: 37px;
-
-         letter-spacing: 0.04em;
-         text-transform: uppercase;
-
-         color: #000000;
-         margin-bottom: 12px;
-     }
-
-     .products-subtittle {
-         text-align: center;
-         font-family: 'Seymour One';
-
-         font-size: 36px;
-         line-height: 45px;
-         letter-spacing: 0.06em;
-         text-transform: uppercase;
-
-         color: #000000;
-     }
-
-     .svg-use {
-         position: absolute;
-         top: 90%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-     }
-
-     .products-list__item {
-         position: relative;
-     }
-
-     .products-img {
-         position: absolute;
-         top: -6%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-
-     }
- }
+  .products-img {
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 // --------------/DESCTOP--------------
-
- 

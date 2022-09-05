@@ -1,26 +1,25 @@
-<section class="products section">
+<section id="products" class="products section">
   <div class="container">
     <h2 class="visually-hidden">Products</h2>
     <div class="products-tittles">
       <p class="products-tittle">100% natural</p>
-      <p class="products-subtittle">products</p>
+      <h3 class="products-subtittle">products</p>
     </div>
     <ul class="products-list">
       <li class="products-list__item">
-        <div class="products-list__card-ice">
-          <h3 class="products-list__card-tittle">ice cream</h3>
+        <article class="products-list__card-ice">
+          <h4 class="products-list__card-tittle">ice cream</h4>
           <p class="products-list__card-info">
             Soft ice cream with a delicate taste. Made with milk, cream, sugar
             and natural stabilizer
           </p>
-          <div class="svg-use">
-            <a class="link-arrow" href="">
-              <svg width="40" height="40" class="products-svg-arrow">
-                <use href="./images/icons.svg#icon-long-arrow"></use>
-              </svg>
-            </a>
-          </div>
-        </div>
+          
+          <button type="button" class="svg-use link-arrow" product-modal__open-btn>
+            <svg width="40" height="40" class="products-svg-arrow">
+              <use href="./images/icons.svg#icon-long-arrow"></use>
+            </svg>
+          </button>
+        </article>
         <div class="picture-ice-cream"></div>
         <picture>
           <source
@@ -54,18 +53,18 @@
         </picture>
       </li>
       <li class="products-list__item">
-        <div class="products-list__card-coffee">
-          <h3 class="products-list__card-tittle">ice coffee</h3>
+        <article class="products-list__card-coffee">
+          <h4 class="products-list__card-tittle">ice coffee</h4>
           <p class="products-list__card-info">
             Fragrant invigorating drink created from 100% natural ingredients
             without the use of preservatives and flavor enhancers
           </p>
-          <div class="svg-use">
+          <button type="button" class="svg-use link-arrow" product-modal__open-btn>
             <svg width="40" height="40" class="products-svg-arrow">
               <use href="./images/icons.svg#icon-long-arrow"></use>
             </svg>
-          </div>
-        </div>
+          </button>
+        </article>
         <picture>
           <source
             media="(min-width: 1200px)"
@@ -98,18 +97,18 @@
         </picture>
       </li>
       <li class="products-list__item">
-        <div class="products-list__card-milkshakes">
-          <h3 class="products-list__card-tittle">milkshakes</h3>
+        <article class="products-list__card-milkshakes">
+          <h4 class="products-list__card-tittle">milkshakes</h4>
           <p class="products-list__card-info">
             Sweet drinks based on milk and ice cream, supplemented with syrups,
             fruits, berries and other sweets of your choice
           </p>
-          <div class="svg-use">
+            <button type="button" class="svg-use link-arrow" product-modal__open-btn>
             <svg width="40" height="40" class="products-svg-arrow">
               <use href="./images/icons.svg#icon-long-arrow"></use>
             </svg>
-          </div>
-        </div>
+          </button>
+        </article>
         <picture>
           <source
             media="(min-width: 1200px)"
