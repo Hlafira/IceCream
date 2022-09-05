@@ -79,7 +79,7 @@
 // tablet
 @media screen and (min-width: $tablet) {
   .hero {
-    padding-top: 40px;
+    padding-top: 100px;
     background-image: url('../images/tablet/hero/hero-bg-767.png');
 
     &__container {
@@ -182,6 +182,7 @@
 // desktop
 @media screen and (min-width: $desktop) {
   .hero {
+    padding-top: 142px;
     background-image: url('../images/desktop/hero/hero-bg-1200.png');
     &__container {
       padding-bottom: 60px;
