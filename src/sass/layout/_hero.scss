@@ -18,8 +18,8 @@
     font-family: 'Seymour One';
     text-transform: uppercase;
     color: var(--primary-text-color);
-    animation: zoomInDown; //nimate__fadeInLeft; //fadeInDown; //backInDown; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 0.7s;
+    //animation: zoomInDown; //nimate__fadeInLeft; //fadeInDown; //backInDown; /* referring directly to the animation's @keyframe declaration */
+    //nimation-duration: 0.7s;
   }
 
   &__important {
@@ -111,7 +111,7 @@
 
     .hero__image {
       animation: rotateIn; /* referring directly to the animation's @keyframe declaration */
-      animation-duration: 0.6s;
+      animation-duration: 1.5s;
     }
 
     &__paragraph {
@@ -125,11 +125,15 @@
     &__arrow {
       color: var(--primary-text-color);
       display: inline-block;
-      transition: color 250ms var(--time-function);
-      &:hover,
+      transition: transform 250ms var(--time-function);
+      transform-origin: center left;
+      &:hover {
+        transform: scaleX(1.25);
+      }
+
       &:focus,
       &:active {
-        color: var(--secondary-btn-color);
+        transform: scale(1.25);
       }
     }
 
