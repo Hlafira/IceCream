@@ -21,7 +21,6 @@ import { OpenClose } from './openClose';
   refsProduct.closeModalBtn.addEventListener('click', toggleModalProduct);
 
   function toggleModalProduct(some) {
-    alert(some);
     document.body.classList.toggle('modal-open');
     refsProduct.modal.classList.toggle('is_hidden');
     refsProduct.modal.querySelector('p').innerHTML = some;
