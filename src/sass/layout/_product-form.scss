@@ -1,0 +1,202 @@
+@media screen and (max-width: 767px) {
+  .modal.modal__backdrop-form-product {
+    height: 990px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 32px;
+  }
+
+  .backdrop-form-product__text {
+    max-width: 150px;
+  }
+
+  .backdrop-form-product__item-content.backdrop-form-product__item-content__tablet {
+    display: none;
+  }
+}
+
+.backdrop-form-product__text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 22px;
+
+  color: var(--secondary-black-text-color);
+  font-family: Seymour One;
+  @include font($fs: 20px, $fw: 400, $lh: 28px);
+}
+
+.backdrop-form-product__png {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 31px;
+
+  background-image: url(../images/mobile/modal/ice-cream-product-131.png);
+  box-shadow: 0px 7px 0px rgba(156, 190, 143, 0.7),
+    0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .backdrop-form-product__png {
+    background-image: url(../images/mobile/modal/ice-cream-product-131@2x.png)
+      inherit;
+  }
+}
+
+.backdrop-form-product__box-weight-content {
+  position: relative;
+}
+
+.backdrop-form-product__box-weight {
+  margin-bottom: 67px;
+}
+
+.backdrop-form-product__list-weight {
+  @include flex-center();
+  gap: 18.5px;
+
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+
+  color: var(--secondary-black-text-color);
+  @include font($fs: 10px, $fw: 500, $lh: 28px);
+}
+
+.backdrop-form-product__item-weight {
+  @include flex-center();
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+
+.backdrop-form-product__list-content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  @include flex-center();
+
+  gap: 8.5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--secondary-black-text-color);
+  @include font($fs: 10px, $fw: 400, $lh: 12px);
+}
+
+.backdrop-form-product__item-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 8px;
+  width: 53px;
+  height: 72px;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+}
+
+.backdrop-form-product__text-second {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--secondary-black-text-color);
+  @include font($fs: 20px, $fw: 500, $lh: 28px);
+}
+
+.backdrop-form-product__recipe {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.backdrop-form-product__list-recipe-ingredients,
+.backdrop-form-product__list-recipe-weight {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-black-text-color);
+  @include font($fs: 14px, $fw: 400, $lh: 25px);
+}
+
+.backdrop-form-product__list-recipe-weight {
+  align-items: flex-end;
+}
+
+.backdrop-form-product__item-recipe-ingredients,
+.backdrop-form-product__item-recipe-weight {
+  margin-bottom: 11px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.button.button_fill.backdrop-form-buy__btn.backdrop-form-product__btn {
+  height: 42px;
+}
+
+.backdrop-form-buy__name-input.backdrop-form-product__name-input,
+.backdrop-form-buy__phone-input.backdrop-form-product__name-input {
+  height: 42px;
+  margin-bottom: 16px;
+}
+
+.backdrop-form-buy__comment.backdrop-form-product__comment {
+  height: 84px;
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: $tablet) {
+  .modal.modal__backdrop-form-product {
+    height: 995px;
+    padding-top: 32px;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .backdrop-form-product__text {
+    text-align: center;
+    margin-bottom: 24px;
+
+    color: var(--secondary-black-text-color);
+    font-family: Seymour One;
+    @include font($fs: 20px, $fw: 400, $lh: 28px);
+  }
+
+  .backdrop-form-product__box-weight {
+    margin-bottom: 84px;
+  }
+
+  .backdrop-form-product__list-weight {
+    gap: 32px;
+    @include font($fs: 12px, $fw: 500, $lh: 28px);
+  }
+
+  .backdrop-form-product__item-weight {
+    width: 53px;
+    height: 53px;
+  }
+
+  .backdrop-form-product__list-content {
+    gap: 20px;
+    @include font($fs: 12px, $fw: 400, $lh: 15px);
+  }
+
+  .backdrop-form-product__item-content.backdrop-form-product__item-content__mobile {
+    display: none;
+  }
+
+  .backdrop-form-product__item-content {
+    padding-bottom: 14px;
+    width: 65px;
+    height: 90px;
+  }
+}
