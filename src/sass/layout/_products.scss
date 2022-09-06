@@ -11,6 +11,9 @@
 
 //  ---------------MOBILE----------------------
 @media screen and (max-width: 767px) {
+  .section {
+    padding-bottom: 60px;
+  }
   .products {
     background-image: url(../images/mobile/mobile-bg.jpg);
 
@@ -77,7 +80,7 @@
 
   .products-list__card-milkshakes {
     position: relative;
-    padding-top: 105px;
+    padding-top: 123px;
     padding-bottom: 60px;
     padding-left: 40px;
     padding-right: 40px;
@@ -365,13 +368,15 @@
 
 // --------------DESCTOP--------------
 @media screen and (min-width: 1200px) {
+  .section {
+      padding-bottom: 66px;
+    }
   .products {
     background-image: url(../images/desktop/desktop-bg.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 1049px;
   }
 
   .products-list__card-ice {
