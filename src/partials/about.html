@@ -1,4 +1,4 @@
-<section id="about" class="">
+<section id="about" class="section about">
   <div class="container about">
     <p class="title title_label">Tradition and love</p>
     <h2 class="title title_header">How it’s made?</h2>
@@ -7,10 +7,27 @@
         <picture class="about_picture">
           <source
             srcset="
+              ./images/desktop/about/cow-490.webp    1x,
+              ./images/desktop/about/cow-490@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
               ./images/desktop/about/cow-490.png    1x,
               ./images/desktop/about/cow-490@2x.png 2x
             "
             media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/tablet/about/cow-330.webp    1x,
+              ./images/tablet/about/cow-330@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
           />
           <source
             srcset="
@@ -18,6 +35,15 @@
               ./images/tablet/about/cow-330@2x.png 2x
             "
             media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/mobile/about/cow-278.webp    1x,
+              ./images/mobile/about/cow-278@2x.webp 2x
+            "
+            media="(max-width: 767px)"
+            type="image/webp"
           />
           <source
             srcset="
@@ -25,6 +51,7 @@
               ./images/mobile/about/cow-278@2x.png 2x
             "
             media="(max-width: 767px)"
+            type="image/png"
           />
           <img
             class="about_picture"
