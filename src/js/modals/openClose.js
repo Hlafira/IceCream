@@ -15,11 +15,8 @@ function close(backdrop) {
   if (document.querySelector('.header')) {
     document.querySelector('.header').style.setProperty('padding-right', 0);
   }
-  if (backdrop) {
-    backdrop.style.setProperty('padding-right', 0);
-  }
 }
 
-export function OpenClose(backdrop) {
-  document.body.classList.contains('modal-open') ? open() : close(backdrop);
+export function OpenClose() {
+  document.body.classList.contains('modal-open') ? open() : close();
 }

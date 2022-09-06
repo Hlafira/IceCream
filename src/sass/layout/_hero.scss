@@ -6,8 +6,9 @@
   padding-top: 120px;
 
   background-image: url('../images/mobile/hero/hero-bg-329.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: bottom;
+  background-size: auto;
 
   // title
   &__title {
@@ -81,6 +82,7 @@
   .hero {
     padding-top: 100px;
     background-image: url('../images/tablet/hero/hero-bg-767.png');
+    background-size: auto;
 
     &__container {
       position: relative;
