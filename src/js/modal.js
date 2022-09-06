@@ -77,4 +77,22 @@
     refsAbout.modal.classList.toggle('is_hidden');
     OpenClose();
   }
+
+  // franchise
+
+  const refsFranchise = {
+    openModalBtn: document.querySelector('[franchise-modal__open-btn]'),
+
+    closeModalBtn: document.querySelector('[franchise-modal__close-button]'),
+    modal: document.querySelector('[franchise-modal]'),
+  };
+
+  refsFranchise.openModalBtn.addEventListener('click', toggleModalFranchise);
+  refsFranchise.closeModalBtn.addEventListener('click', toggleModalFranchise);
+
+  function toggleModalFranchise() {
+    document.body.classList.toggle('modal-open');
+    refsFranchise.modal.classList.toggle('is_hidden');
+    OpenClose();
+  }
 })();
