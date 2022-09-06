@@ -30,6 +30,7 @@
   width: 32px;
   fill: var(--primary-text-color);
   transition: fill 250ms var(--time-function);
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -80,6 +81,7 @@
   width: 32px;
   fill: var(--primary-text-color);
   transition: fill 250ms var(--time-function);
+  cursor: pointer;
 
   &:hover,
   &:focus {
