@@ -94,9 +94,9 @@
   &:not(:last-child)::after {
     content: '';
     display: block;
-    border: 1px solid var(--lines-color);
     width: 100%;
-    height: 0px;
+    height: 1px;
+    background-color: var(--lines-color);
 
     margin: 24px 0;
 

@@ -14,6 +14,7 @@
   border: 1px solid var(--section-color);
   border-radius: 10px;
   cursor: pointer;
+  transition: outline 250ms var(--time-function);
 }
 
 .backdrop-form-buy__box textarea {
@@ -22,8 +23,8 @@
 
 .backdrop-form-buy__box input:focus,
 .backdrop-form-buy__box textarea:focus {
-  border: 2px solid var(--secondary-btn-color);
-  outline: none;
+  outline: 1px solid var(--secondary-btn-color);
+  //outline: none;
 }
 
 .backdrop-form-buy__box-check {

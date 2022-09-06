@@ -140,7 +140,7 @@
   <ul class="button-list">
     <li class="button-list__item">
       <button
-        location-modal__open-btn
+        data-modal-open="location-modal"
         type="button"
         class="button location-btn"
       >
@@ -151,7 +151,11 @@
       </button>
     </li>
     <li class="button-list__item">
-      <button type="button" class="button franchise-btn">
+      <button
+        type="button"
+        class="button franchise-btn"
+        data-modal-open="franchise-modal"
+      >
         Franchise
         <svg class="button__svg franchise-icon">
           <use href="./images/icons.svg#icon-arrow"></use>
