@@ -1,4 +1,121 @@
-<header class="header" id="header">
+<!-- Form product -->
+<!-- Modal window -->
+<div class="backdrop is_hidden" id="product-modal">
+  <div class="modal modal__backdrop-form-product">
+    <button type="button" class="modal__close-button" data-modal-close>
+      <svg class="modal__btn-svg" width="10" height="10">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="backdrop-form-buy" autocomplete="on">
+      <p class="backdrop-form-product__text">Chololate icecream</p>
+
+      <div class="backdrop-form-product__png"></div>
+
+      <div class="backdrop-form-product__box-weight-content">
+        <div class="backdrop-form-product__box-weight">
+          <ul class="backdrop-form-product__list-weight">
+            <li class="backdrop-form-product__item-weight">320</li>
+            <li class="backdrop-form-product__item-weight">4g</li>
+            <li class="backdrop-form-product__item-weight">8,2g</li>
+            <li class="backdrop-form-product__item-weight">40,4g</li>
+          </ul>
+        </div>
+
+        <div class="backdrop-form-product__box-content">
+          <ul class="backdrop-form-product__list-content">
+            <li class="backdrop-form-product__item-content">kcal</li>
+            <li
+              class="backdrop-form-product__item-content backdrop-form-product__item-content__mobile"
+            >
+              Prote...
+            </li>
+            <li
+              class="backdrop-form-product__item-content backdrop-form-product__item-content__tablet"
+            >
+              Protein
+            </li>
+            <li class="backdrop-form-product__item-content">Fats</li>
+            <li class="backdrop-form-product__item-content">Carbs</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="backdrop-form-product__text-second">Ingredients</p>
+
+      <div class="backdrop-form-product__recipe">
+        <ul class="backdrop-form-product__list-recipe-ingredients">
+          <li class="backdrop-form-product__item-recipe-ingredients">Milk</li>
+          <li class="backdrop-form-product__item-recipe-ingredients">
+            Belgian chocolate
+          </li>
+          <li class="backdrop-form-product__item-recipe-ingredients">Cream</li>
+          <li class="backdrop-form-product__item-recipe-ingredients">
+            Cocoa powder
+          </li>
+          <li class="backdrop-form-product__item-recipe-ingredients">Sugar</li>
+          <li class="backdrop-form-product__item-recipe-ingredients">
+            Vanilla sugar
+          </li>
+        </ul>
+        <ul class="backdrop-form-product__list-recipe-weight">
+          <li class="backdrop-form-product__item-recipe-weight">100ml</li>
+          <li class="backdrop-form-product__item-recipe-weight">20g</li>
+          <li class="backdrop-form-product__item-recipe-weight">150ml</li>
+          <li class="backdrop-form-product__item-recipe-weight">30g</li>
+          <li class="backdrop-form-product__item-recipe-weight">40g</li>
+          <li class="backdrop-form-product__item-recipe-weight">10g</li>
+        </ul>
+      </div>
+
+      <div class="backdrop-form-buy__box">
+        <input
+          class="backdrop-form-buy__name-input backdrop-form-product__name-input"
+          placeholder="Name"
+          type="text"
+          name="name"
+          id="backdrop-form-buy__name"
+          required
+          autofocus
+          pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+          minlength="2"
+        />
+      </div>
+
+      <div class="backdrop-form-buy__box">
+        <input
+          class="backdrop-form-buy__phone-input backdrop-form-product__name-input"
+          placeholder="Phone"
+          type="tel"
+          name="backdrop-form-buy__phone"
+          id="backdrop-form-buy__phone"
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+        />
+      </div>
+
+      <div class="backdrop-form-buy__box">
+        <textarea
+          class="backdrop-form-buy__comment backdrop-form-product__comment"
+          name="backdrop-form-buy__comment"
+          id="backdrop-form-buy__comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+
+      <button
+        class="button button_fill backdrop-form-buy__btn backdrop-form-product__btn"
+        type="button"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<header class="header">
   <div class="container modile-container mobile-box">
     <nav class="header-nav">
       <a class="header-nav__logo" href="./index.html">
@@ -171,20 +288,6 @@
         <p class="backdrop-form-buy__text">Buy now</p>
 
         <div class="backdrop-form-buy__box-box-check">
-          <!-- <picture class="backdrop-form-buy__picture">
-          <source
-            srcset="
-              ./images/mobile/modal/ice-cream-131.png    1x,
-              ./images/mobile/modal/ice-cream-131@2x.png 2x
-            "
-          />
-          <img
-            class="backdrop-form-buy__png backdrop-form-buy__png-ice-cream"
-            src="./images/mobile/modal/ice-cream-131.png"
-            alt="Ice-cream"
-          />
-        </picture> -->
-
           <div class="backdrop-form-buy__box-check">
             <input
               class="backdrop-form-buy__input-check-ice-cream visually-hidden"
@@ -196,26 +299,12 @@
               class="backdrop-form-buy__choice backdrop-form-buy__choice-ice-cream"
               for="backdrop-form-buy__choice-ice-cream"
             >
-              <div
+              <span
                 class="backdrop-form-buy__png backdrop-form-buy__png-ice-cream"
-              ></div>
+              ></span>
               ice cream</label
             >
           </div>
-
-          <!-- <picture class="backdrop-form-buy__picture">
-          <source
-            srcset="
-              ./images/mobile/modal/ice-coffee-131.png    1x,
-              ./images/mobile/modal/ice-coffee-131@2x.png 2x
-            "
-          />
-          <img
-            class="backdrop-form-buy__png backdrop-form-buy__png-ice-coffee"
-            src="./images/mobile/modal/ice-coffee-131.png"
-            alt="Ice-coffee"
-          />
-        </picture> -->
 
           <div class="backdrop-form-buy__box-check">
             <input
@@ -228,26 +317,12 @@
               class="backdrop-form-buy__choice backdrop-form-buy__choice-ice-coffee"
               for="backdrop-form-buy__choice-ice-coffee"
             >
-              <div
+              <span
                 class="backdrop-form-buy__png backdrop-form-buy__png-ice-coffee"
-              ></div>
+              ></span>
               ice coffee</label
             >
           </div>
-
-          <!-- <picture class="backdrop-form-buy__picture">
-          <source
-            srcset="
-              ./images/mobile/modal/milkshakes-131.png    1x,
-              ./images/mobile/modal/milkshakes-131@2x.png 2x
-            "
-          />
-          <img
-            class="backdrop-form-buy__png backdrop-form-buy__png-milkshakes"
-            src="./images/mobile/modal/milkshakes-131.png"
-            alt="Milkshakes"
-          />
-        </picture> -->
 
           <div class="backdrop-form-buy__box-check">
             <input
@@ -259,9 +334,10 @@
             <label
               class="backdrop-form-buy__choice backdrop-form-buy__choice-milkshakes"
               for="backdrop-form-buy__choice-milkshakes"
-              ><div
+            >
+              <span
                 class="backdrop-form-buy__png backdrop-form-buy__png-milkshakes"
-              ></div>
+              ></span>
               milkshake</label
             >
           </div>
@@ -289,7 +365,6 @@
             name="backdrop-form-buy__phone"
             id="backdrop-form-buy__phone"
             required
-            autofocus
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="xxx-xxx-xx-xx"
           />
