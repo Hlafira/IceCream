@@ -269,6 +269,14 @@
   }
 }
 
+@media screen and (max-height: 660px) {
+  .modal.modal__backdrop-form-buy {
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 @media screen and (min-width: $tablet) {
   .backdrop-form-buy__text {
     @include font($fs: 29px, $fw: 400, $lh: 28px);
