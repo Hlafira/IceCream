@@ -86,7 +86,7 @@
 
     &__container {
       position: relative;
-      padding-bottom: 6px;
+      padding-bottom: 32px;
     }
 
     // title
@@ -101,17 +101,22 @@
 
     // links
     &__links {
-      margin-bottom: 28px;
+      margin-bottom: 56px;
     }
 
     // description
     &__description {
-      display: flex;
-      gap: 33px;
-      align-items: center;
+      display: block;
+
+      // gap: 33px;
+      // align-items: center;
+      padding-left: 185px;
     }
 
     .hero__image {
+      position: absolute;
+      left: 32;
+      bottom: 13px;
       animation: rotateIn; /* referring directly to the animation's @keyframe declaration */
       animation-duration: 1.5s;
     }
@@ -120,7 +125,7 @@
       @include font($fs: 12px, $fw: 400, $lh: 16px);
       letter-spacing: 0;
       width: 150px;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
       // line-height: 1.7;
     }
 
@@ -191,7 +196,7 @@
     padding-top: 142px;
     background-image: url('../images/desktop/hero/hero-bg-1200.png');
     &__container {
-      padding-bottom: 60px;
+      padding-bottom: 107px;
     }
     &__title {
       width: 380px;
@@ -213,11 +218,16 @@
     }
 
     &__links {
-      margin-bottom: 40px;
+      margin-bottom: 107px;
+    }
+
+    .hero__image {
+      bottom: 62px;
+      left: 16px;
     }
 
     &__description {
-      gap: 22px;
+      padding-left: 241px;
     }
 
     &__paragraph {
