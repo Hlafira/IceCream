@@ -3,6 +3,10 @@
   @media screen and (min-width: $tablet) {
     padding: 32px 55px;
   }
+  @media screen and (max-height: 610px) and (min-width: $tablet) {
+    top: calc(10px);
+    transform: translateX(-50%);
+  }
 }
 .franchise__close-icon {
   width: 9px;
